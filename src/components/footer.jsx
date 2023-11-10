@@ -5,7 +5,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export default function Footer() {
     return (
-        <footer className=" ml-3">
+        <footer id="connect" className="ml-3">
             <p id="credit1">Created by Dillon Walsh</p>{' '}
             <p>
                 Feel free to reach out! <br></br>
