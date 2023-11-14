@@ -13,11 +13,16 @@ function App() {
     return (
         <div>
             <Header />
-            <div className="fixed right-20 bottom-20">
-                <a href="#top" className="" onClick={scrollTop}>
-                    &uarr;
-                </a>
-            </div>
+
+            <button
+                id="arrow"
+                onClick={scrollTop}
+                className="fixed right-20 bottom-20 bg-cyan-50 rounded-full text-black px-3 py-2 animate-none button-bounce"
+                aria-label="Scroll to top"
+            >
+                &uarr;
+            </button>
+
             <Tech />
             <Projects />
             <Footer />
