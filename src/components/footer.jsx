@@ -45,8 +45,10 @@ export default function Footer() {
                 </p>
             </div>
             <footer className="flex justify-center items-center pt-4 mt-6">
-                <p>Created by Dillon Walsh <br/> &copy;2023
-                All Rights Reserved</p>
+                <p>
+                    Created by Dillon Walsh <br /> &copy;2023 All Rights
+                    Reserved
+                </p>
             </footer>
         </>
     );
