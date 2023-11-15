@@ -8,7 +8,10 @@ export default function Header() {
                     <img className="hover:scale-105" src={logo} alt="Logo" />
                 </a>
                 <div className="justify-center items-end px-2">
-                    <a className="m-2 hover:underline select:underline" href="#about">
+                    <a
+                        className="m-2 hover:underline select:underline"
+                        href="#about"
+                    >
                         About
                     </a>
                     <a className="m-2 hover:underline" href="#projects">
