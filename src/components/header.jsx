@@ -43,7 +43,7 @@ export default function Header() {
               />
             </a>
             <a
-              id="linkedin-link"
+              id="linkedinLnk"
               href="https://www.linkedin.com/in/dillon-walsh-50673b290/"
               target="_blank"
               rel="noreferrer"
