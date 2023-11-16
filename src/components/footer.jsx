@@ -1,12 +1,12 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+
 
 export default function Footer() {
   return (
     <>
-      <footer className="mt-6 flex items-center justify-center pt-4 ">
+      <footer className="mt-6 flex items-center justify-center pt-4 text-center">
         <p>
-          Created by Dillon Walsh <br /> &copy;2023 All Rights Reserved
+        Built using <b>React</b> and <b>Tailwind</b>, with some draft work in Figma, Deployed through Vercel.<br/>
+          Created by Dillon Walsh  &copy;2023 All Rights Reserved 
         </p>
       </footer>
     </>

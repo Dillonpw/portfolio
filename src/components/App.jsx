@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <>
-      <div className="relative min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200 first-letter:m-0 dark:bg-gradient-to-br dark:from-sky-50 dark:to-slate-100">
+      <div className="relative min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200 first-letter:m-0 ">
         <Header />
 
         <button
