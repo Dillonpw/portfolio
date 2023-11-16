@@ -32,11 +32,11 @@ export default function Header() {
           </h2>
           <div id="links" className="px-5 pt-4 text-cyan-100 opacity-60">
             <a
-              id="github-link"
+              id="githubLink"
               href="https://github.com/Dillonpw/"
               target="_blank"
               rel="noreferrer"
-              alt="redirect to Github"
+              aria-label="redirect to Github"
             >
               <FontAwesomeIcon
                 className="mr-8 h-8 w-8 hover:scale-110"
@@ -48,7 +48,7 @@ export default function Header() {
               href="https://www.linkedin.com/in/dillon-walsh-50673b290/"
               target="_blank"
               rel="noreferrer"
-              alt="redirect to Linkedin"
+              aria-label="redirect to Linkedin"
             >
               <FontAwesomeIcon
                 className=" h-8 w-8 hover:scale-110"
