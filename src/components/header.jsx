@@ -30,17 +30,16 @@ export default function Header() {
           <h2 className="px-5 pb-2 text-2xl opacity-60">
             Full Stack Web Developer and Designer
           </h2>
-          <p className="px-5 text-cyan-100 opacity-60">
+          <div id="links" className="px-5 pt-4 text-cyan-100 opacity-60">
             <a
               id="github-link"
               href="https://github.com/Dillonpw/"
               target="_blank"
               rel="noreferrer"
               alt="redirect to Github"
-
             >
               <FontAwesomeIcon
-                className="mr-2 hover:scale-110"
+                className="mr-8 h-8 w-8 hover:scale-110"
                 icon={faGithub}
               />
             </a>
@@ -50,14 +49,13 @@ export default function Header() {
               target="_blank"
               rel="noreferrer"
               alt="redirect to Linkedin"
-
             >
               <FontAwesomeIcon
-                className="mr-2 hover:scale-110"
+                className=" h-8 w-8 hover:scale-110"
                 icon={faLinkedinIn}
               />
             </a>
-          </p>
+          </div>
         </div>
         <div className="mt-5 flex w-full px-6 md:w-1/2">
           <p className="px-6 opacity-60">
