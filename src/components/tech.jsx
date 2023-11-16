@@ -16,7 +16,7 @@ export default function Tech() {
       id="tech"
       className=" flex flex-col items-center justify-center rounded-md p-10 text-center"
     >
-      <div className="sm: w-100 grid grid-cols-1 gap-x-10 gap-y-10 pt-10 text-lg sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-lg sm:grid-cols-2 lg:grid-cols-4">
         <div>
           <p className="pb-2 text-2xl font-bold">Front End</p>
           <ul className="list-none space-y-2">

@@ -2,14 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
 
-  background-color: black;
+
+#root {
+  scroll-behavior: smooth;
+  min-height: 100vh;
+  height :100vh;
+  margin: 0;
+  padding: 0;
+
 }
 
 body {
-  height: 100%;
+  min-height: 100vh;
 }
 
 @keyframes fade-in {

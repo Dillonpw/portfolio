@@ -11,13 +11,13 @@ function App() {
     });
   };
   return (
-    <div>
+    <div className="relative min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200 first-letter:m-0">
       <Header />
 
       <button
         id="arrow"
         onClick={scrollTop}
-        className="button-bounce fixed bottom-20 right-20 hidden animate-none rounded-full bg-cyan-50 px-2 py-1 text-black md:flex"
+        className="button-bounce fixed bottom-4 right-10 hidden h-1 w-1 items-center justify-center rounded-full bg-cyan-50 p-4 text-black hover:bg-cyan-200 md:flex"
         aria-label="Scroll to top"
       >
         &uarr;
