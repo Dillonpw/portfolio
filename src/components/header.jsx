@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <>
       <div className="pb-15 fade-in flex flex-row items-center justify-between p-4">
-        <a href="top" id="top" className="justify-start px-2">
+        <a href="top" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </a>
         <div className="items-end justify-center px-2">
@@ -36,6 +36,8 @@ export default function Header() {
               href="https://github.com/Dillonpw/"
               target="_blank"
               rel="noreferrer"
+              alt="redirect to Github"
+
             >
               <FontAwesomeIcon
                 className="mr-2 hover:scale-110"
@@ -47,6 +49,8 @@ export default function Header() {
               href="https://www.linkedin.com/in/dillon-walsh-50673b290/"
               target="_blank"
               rel="noreferrer"
+              alt="redirect to Linkedin"
+
             >
               <FontAwesomeIcon
                 className="mr-2 hover:scale-110"
