@@ -20,10 +20,10 @@ body {
 
 @keyframes fade-in {
   from {
-    opacity: 0;
+    opacity: 0; transform: translateY(20px);
   }
   to {
-    opacity: 1;
+    opacity: 1; transform: translateY(0);
   }
 }
 
@@ -48,13 +48,4 @@ body {
 
 .fade-in {
   animation: fade-in 3s ease forwards;
-}
-
-.fade-in-2 {
-  animation: fade-in 6s ease forwards;
-}
-
-.fade-in-3{
-  animation: fade-in 8s ease forwards;
-
 }
