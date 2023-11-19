@@ -5,22 +5,33 @@ import logo from '/assets/logo.svg'
 export default function Header() {
   const scrollAbout = () => {
     window.scrollTo({
-      top: 130,
+      top: 90,
       behavior: 'smooth',
     })
   }
-  const scrollTech = () => {
-    window.scrollTo({
-      bottom: 0,
-      behavior: 'smooth',
-    })
+  const scrollTech = (e) => {
+    e.preventDefault()
+    const techElement = document.getElementById('tech')
+    if (techElement) {
+      const topPos = techElement.offsetTop
+      window.scrollTo({
+        top: topPos,
+        behavior: 'smooth',
+      })
+    }
   }
-  const scrollProjects = () => {
-    window.scrollTo({
-      bottom: 0,
-      behavior: 'smooth',
-    })
+  const scrollProjects = (e) => {
+    e.preventDefault()
+    const projectsElement = document.getElementById('projects')
+    if (projectsElement) {
+      const topPos = projectsElement.offsetTop
+      window.scrollTo({
+        top: topPos,
+        behavior: 'smooth',
+      })
+    }
   }
+
   return (
     <>
       <div className="pb-15 flex flex-row items-center justify-between p-4">
@@ -47,15 +58,18 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center pt-10 md:flex-row fade-in">
+      <div className="flex flex-col items-center justify-center pt-10 md:flex-row">
         <div className="flex w-full flex-col px-6 md:w-1/2">
-          <h1 id="home" className="px-5 pb-2 text-5xl">
+          <h1 id="home" className="px-5 pb-2 text-5xl fade-in">
             Dillon Walsh
           </h1>
-          <h2 className="px-5 pb-2 text-2xl opacity-60">
+          <h2 className="px-5 pb-2 text-2xl opacity-60 fade-in-2">
             Full Stack Web Developer and Designer
           </h2>
-          <div id="links" className="px-5 pt-4 ml-1 text-cyan-100 opacity-60">
+          <div
+            id="links"
+            className="px-5 pt-4 ml-1 text-cyan-100 opacity-60 fade-in-3"
+          >
             <a
               id="githubLink"
               href="https://github.com/Dillonpw/"
@@ -83,7 +97,7 @@ export default function Header() {
           </div>
         </div>
         <div className="mt-5 flex w-full px-6 md:w-1/2">
-          <p className="px-6 opacity-60">
+          <p className="px-6 opacity-60 fade-in-4">
             After graduating from College in 2019, I took a full time position
             as a 911 emergency dispatcher. Though the job could be demanding, it
             also afforded me plenty of downtime which I used to learn web

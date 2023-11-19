@@ -21,6 +21,7 @@ export default function Tech() {
     'Python',
     'Angular',
     'Astro',
+    'Three.js',
   ])
 
   return (
@@ -28,7 +29,7 @@ export default function Tech() {
       id="tech"
       className=" flex flex-col items-center justify-center rounded-md p-10 text-center"
     >
-      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-lg sm:grid-cols-1 lg:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-lg sm:grid-cols-1 md:grid-cols-3 fade-in-5">
         <div>
           <p className="pb-2 text-2xl font-bold">Langauges</p>
           <ul className="list-none space-y-2">
