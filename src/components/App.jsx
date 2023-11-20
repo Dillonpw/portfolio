@@ -22,7 +22,7 @@ function App() {
         <button
           id="arrow"
           onClick={scrollTop}
-          className="button-bounce fixed bottom-4 right-10 hidden h-1 w-1 items-center justify-center rounded-full bg-cyan-50 p-4 text-black hover:bg-cyan-200 md:flex"
+          className="button-bounce fixed bottom-4 right-10 hidden h-1 w-1 items-center justify-center rounded-full bg-cyan-50 p-4 text-black hover:bg-cyan-200 md:flex z-50"
           aria-label="Scroll to top"
         >
           &uarr;
