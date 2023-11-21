@@ -1,3 +1,5 @@
+import images from './images'
+
 export default function Projects() {
   return (
     <div className="fade-in-6">
@@ -7,6 +9,9 @@ export default function Projects() {
       >
         Projects
       </h3>
+      {images.map(({ id, src, title, description }) => (
+        <img key={id} src={src} title={title} alt={description} />
+      ))}
     </div>
   )
 }
