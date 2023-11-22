@@ -3,12 +3,12 @@
 const images = [
   {
     id: 1,
-    src: 'assets/dtView.jpg',
+    src: '/assets/dtView.jpg',
     title: 'dt-CV',
     description:
       'A React application where a user is able to view and print a basic resume before committing to a professional resume. The user has the ability to update their personal info, work history, and education, adding multiple work and education items if they wish. Upon visiting the page, the template will be filled out with generic information to give the user an idea of what the finished product may look like.',
   },
-  { id: 2, src: 'assets/mView.jpg', title: 'm-CV', description: '' },
+  { id: 2, src: '/assets/mView.jpg', title: 'm-CV', description: '' },
 ]
 
 export default function Projects() {
