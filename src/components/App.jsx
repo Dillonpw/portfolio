@@ -3,6 +3,7 @@ import Footer from "./footer.jsx";
 import Header from "./header.jsx";
 import Projects from "./projects.jsx";
 import Tech from "./tech.jsx";
+
  
 
 
