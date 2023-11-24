@@ -1,4 +1,4 @@
-
+import textBox from '/assets/textbox.png'
 
 const images = [
   {
@@ -14,13 +14,18 @@ const images = [
 export default function Projects() {
   return (
     <div className="fade-in-6">
-      <h3 id="projects" className="text-2xl font-bold text-center mb-4">
-        Projects
-      </h3>
-      
+        <h3 id="projects" className="text-2xl font-bold text-center mb-4">
+          Projects
+        </h3>
+
       <div className="grid grid-cols-1 md:grid-cols-2 mt-8">
         <div className="flex flex-col items-center md:col-span-1">
-          <a className="hover:scale-105" href="https://cv-template-navy.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <a
+            className="hover:scale-105"
+            href="https://cv-template-navy.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="w-100 rounded-lg h-50"
               src={images[0].src}
@@ -32,7 +37,12 @@ export default function Projects() {
           </div>
         </div>
         <div className="flex flex-col items-center md:col-span-1">
-          <a className="hover:scale-105" href="https://cv-template-navy.vercel.app/" target="_blank" rel="noopener noreferrer">
+          <a
+            className="hover:scale-105"
+            href="https://cv-template-navy.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <img
               className="w-100 h-100 rounded-lg"
               src={images[1].src}
@@ -42,6 +52,5 @@ export default function Projects() {
         </div>
       </div>
     </div>
-  );
+  )
 }
-

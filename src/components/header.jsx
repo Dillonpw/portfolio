@@ -9,33 +9,37 @@ export default function Header() {
       behavior: 'smooth',
     })
   }
+
   const scrollTech = (e) => {
     e.preventDefault()
     const techElement = document.getElementById('tech')
     if (techElement) {
-      const topPos = techElement.offsetTop
+      const techPos = techElement.offsetTop
       window.scrollTo({
-        top: topPos,
-        behavior: 'smooth',
-      })
-    }
-  }
-  const scrollProjects = (e) => {
-    e.preventDefault()
-    const projectsElement = document.getElementById('projects')
-    if (projectsElement) {
-      const topPos = projectsElement.offsetTop
-      window.scrollTo({
-        top: topPos,
+        top: techPos,
         behavior: 'smooth',
       })
     }
   }
 
+  const scrollProjects = (e) => {
+    e.preventDefault();
+    const projectElement = document.getElementById('projects');
+    if (projectElement) {
+      const projectPos = projectElement.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: projectPos,
+        behavior: 'smooth',
+      });
+    }
+  };
+  
+  
+
   return (
     <>
       <div className="pb-15 flex flex-row items-center justify-between p-4">
-        <a href="home" id="logo" className="justify-start px-2">
+        <a href="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </a>
         <div className="items-end justify-center px-2">
