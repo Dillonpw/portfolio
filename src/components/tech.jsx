@@ -31,7 +31,7 @@ export default function Tech() {
     >
       <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-lg sm:grid-cols-1 md:grid-cols-3 fade-in-5">
         <div>
-          <p className="pb-2 text-2xl font-bold">Langauges</p>
+          <p className="pb-2 text-2xl font-bold">Languages</p>
           <ul className="list-none space-y-2">
             {devTools.map((dt) => (
               <li className="opacity-50" key={dt}>
