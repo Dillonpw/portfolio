@@ -23,18 +23,17 @@ export default function Header() {
   }
 
   const scrollProjects = (e) => {
-    e.preventDefault();
-    const projectElement = document.getElementById('projects');
+    e.preventDefault()
+    const projectElement = document.getElementById('projects')
     if (projectElement) {
-      const projectPos = projectElement.getBoundingClientRect().top + window.scrollY;
+      const projectPos =
+        projectElement.getBoundingClientRect().top + window.scrollY
       window.scrollTo({
         top: projectPos,
         behavior: 'smooth',
-      });
+      })
     }
-  };
-  
-  
+  }
 
   return (
     <>
@@ -42,7 +41,7 @@ export default function Header() {
         <a href="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </a>
-        <div className="items-end justify-center px-2">
+        <div className="items-end justify-center px-2 text-xl">
           <a
             className="m-2 hover:underline"
             href="#about"
@@ -62,17 +61,17 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center pt-10 md:flex-row">
+      <div className="mt-40 flex flex-col items-center justify-center pt-10 md:flex-row">
         <div className="flex w-full flex-col px-6 md:w-1/2">
-          <h1 id="home" className="px-5 pb-2 text-5xl fade-in">
+          <h1 id="home" className="fade-in px-5 pb-2 text-5xl">
             Dillon Walsh
           </h1>
-          <h2 className="px-5 pb-2 text-2xl opacity-60 fade-in-2">
+          <h2 className="fade-in-2 px-5 pb-2 text-2xl opacity-60">
             Full Stack Web Developer and Designer
           </h2>
           <div
             id="links"
-            className="px-5 pt-4 ml-1 text-cyan-100 opacity-60 fade-in-3"
+            className="fade-in-3 ml-1 px-5 pt-4 text-cyan-100 opacity-60"
           >
             <a
               id="githubLink"
@@ -101,7 +100,7 @@ export default function Header() {
           </div>
         </div>
         <div className="mt-5 flex w-full px-6 md:w-1/2">
-          <p className="px-6 opacity-60 fade-in-4">
+          <p className="fade-in-4  px-6 text-xl opacity-60">
             After graduating from College in 2019, I took a full time position
             as a 911 emergency dispatcher. Though the job could be demanding, it
             also afforded me plenty of downtime which I used to learn web

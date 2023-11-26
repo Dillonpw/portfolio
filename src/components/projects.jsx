@@ -14,11 +14,11 @@ const images = [
 export default function Projects() {
   return (
     <div className="fade-in-6">
-        <h3 id="projects" className="text-2xl font-bold text-center mb-4">
-          Projects
-        </h3>
+      <h3 id="projects" className="mb-4 text-center text-3xl font-bold">
+        Projects
+      </h3>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 mt-8">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col items-center md:col-span-1">
           <a
             className="hover:scale-105"
@@ -27,12 +27,12 @@ export default function Projects() {
             rel="noreferrer"
           >
             <img
-              className="w-100 rounded-lg h-50"
+              className="w-100 h-50 rounded-lg"
               src={images[0].src}
               alt={images[0].title}
             />
           </a>
-          <div className="p-4 opacity-50 w-100">
+          <div className="w-100 p-4 opacity-50">
             <p>{images[0].description}</p>
           </div>
         </div>
