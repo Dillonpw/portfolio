@@ -77,24 +77,6 @@ body {
   animation-delay: 1s;
 }
 
-.fade-in-5 {
-  visibility: hidden;
-  animation: fade-in 2s ease forwards;
-  animation-delay: 2s;
-}
-
-.fade-in-6 {
-  visibility: hidden;
-  animation: fade-in 2s ease forwards;
-  animation-delay: 3s;
-}
-
-.fade-in-7 {
-  visibility: hidden;
-  animation: fade-in 2s ease forwards;
-  animation-delay: 4s;
-}
-
 .w-100 {
   width: 25rem;
 }

@@ -28,7 +28,7 @@ export default function Tech() {
       id="tech"
       className=" my-60 flex flex-col items-center justify-center rounded-md p-10 text-center"
     >
-      <div className="fade-in-5 grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
+      <div className="fade-in-4 grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
         <div>
           <p className="pb-2 text-3xl font-bold">Stack</p>
           <ul className="list-none space-y-2">

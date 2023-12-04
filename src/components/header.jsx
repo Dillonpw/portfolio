@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from '/assets/logo.svg'
@@ -37,10 +38,10 @@ export default function Header() {
 
   return (
     <>
-      <div className="pb-15 flex flex-row items-center justify-between p-4 pt-6">
-        <a href="/" id="logo" className="justify-start px-2">
-          <img className="hover:scale-105" src={logo} alt="Logo" />
-        </a>
+      <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
+          <Link to="/" id="logo" className="justify-start px-2">
+            <img className="hover:scale-105" src={logo} alt="Logo" />
+          </Link>
         <div className="items-end justify-center px-2 text-xl">
           <a
             className="m-2 hover:underline"
@@ -61,8 +62,8 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className="mt-40 flex flex-col items-center justify-center pt-10 md:flex-row">
-        <div className="ml-8 flex w-full flex-col px-6 md:w-1/2">
+      <div className="mx-8 mt-40 flex flex-col items-center justify-center pt-10 md:flex-row">
+        <div className=" flex w-full flex-col px-6 md:w-1/2">
           <h1 id="home" className="fade-in px-5 pb-2 text-5xl">
             Dillon Walsh
           </h1>
@@ -99,7 +100,8 @@ export default function Header() {
             </a>
           </div>
         </div>
-        <div className="mr-8 mt-5 flex w-full px-6 md:w-1/2">
+
+        <div className="mt-5 flex w-full px-6 md:w-1/2">
           <p className="fade-in-4 px-6 text-xl opacity-60">
             After graduating from College in 2019, I took a full time position
             as a 911 emergency dispatcher. Though the job could be demanding, it
@@ -109,6 +111,7 @@ export default function Header() {
             to learn. Now I contribute to The Odin Project curriculum and build
             projects for myself and customers in my spare time.
           </p>
+          <Link to="/about" className="text-blue-500 hover:text-blue-800" />
         </div>
       </div>
     </>
