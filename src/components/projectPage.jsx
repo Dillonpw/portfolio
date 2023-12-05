@@ -7,10 +7,12 @@ const ProjectPage = () => {
   const renderContent = () => {
     switch (projectId) {
       case 'cv-template':
-        return <div>This is the CV Template Project</div>;
+        return <div>This is the CV Template Page</div>;
+        case 'schedule-app':
+          return <div>This is the schedule app page</div>;
       // Add more cases here for different projectIds
       default:
-        return <div>Default project content or error message</div>;
+        return <div>Oops! there's nothing here...</div>;
     }
   };
 

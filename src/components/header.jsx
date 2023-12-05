@@ -108,8 +108,8 @@ export default function Header() {
             also afforded me plenty of downtime which I used to learn web
             development using free resources like freeCodeCamp and The Odin
             Project. Since then I have been designing, building and continuing
-            to learn. Now I contribute to The Odin Project and other open source projects where I can, while building
-            projects for myself and customers in my spare time.
+            to learn. Now I contribute to The Odin Project documentation and other open source projects when I can, while building
+            personal projects and client projects in my spare time.
           </p>
           <Link to="/about" className="text-blue-500 hover:text-blue-800" />
         </div>
