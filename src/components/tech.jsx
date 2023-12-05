@@ -6,7 +6,8 @@ export default function Tech() {
     'React',
     'Tailwind',
     'Express',
-    'MongoDB',
+    'Astro',
+
   ])
   const [otherTools, setOtherTools] = useState([
     'Bootstrap',
@@ -18,9 +19,10 @@ export default function Tech() {
   const [learning, setLearning] = useState([
     'Python',
     'Angular',
-    'Astro',
     'Three.js',
     'Next.js',
+    'MongoDB',
+
   ])
 
   return (

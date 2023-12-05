@@ -17,7 +17,7 @@ const ProjectPage = () => {
   return (
     <div>
       Project Page for {projectId}
-      {renderContent()} {/* This will display content based on projectId */}
+      {renderContent()} {}
     </div>
   );
 };
