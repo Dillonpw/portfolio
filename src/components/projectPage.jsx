@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import { * } from './public/assets';
 
 const ProjectPage = () => {
   const { projectId } = useParams();
@@ -10,9 +11,11 @@ const ProjectPage = () => {
         return <div>This is the CV Template Page</div>;
         case 'schedule-app':
           return <div>This is the schedule app page</div>;
+          case 'pricing-toggle':
+            return <div>This is the pricing toggle Page</div>;
       // Add more cases here for different projectIds
       default:
-        return <div>Oops! there's nothing here...</div>;
+        return <div>Oops! there's nothing here... </div>;
     }
   };
 

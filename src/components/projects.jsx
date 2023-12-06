@@ -12,10 +12,17 @@ const images = [
   {
     id: 'schedule-app',
     src: '/assets/schedule-app.png',
-    title: 'schedule',
+    title: 'Schedule App',
     description:
       'A basic HTML/CSS/JS web page that accepts user input and returns a work schedule based on their work rotation. As a 911 Dispatcher, my schedule was different every week because of the need to staff the position 24 hrs a day and required a great deal of effort to try to schedule anything in advance. I built this page as a solution for myself and my coworkers who wanted to quickly check to see if they were going to be working on a given day or not.',
   },
+
+  {
+    id: 'pricing-toggle',
+    src: '/assets/pricing-toggle.png',
+    title: 'Pricing Toggle',
+    description: "A simple pricing component to be apllied to a landing page built with HTML, CSS and JS. In theory the buttons would redirect to more infomation but this is a standalone page. There is a toggle switch to display either annual cost plans or monthyly plans. The page is responsive and functions the same on mobile."
+  }
 ]
 
 export default function Projects() {
@@ -31,9 +38,9 @@ export default function Projects() {
             key={image.id}
             className="flex flex-col items-center md:col-span-1"
           >
-            <Link className="hover:scale-105" to={`/projects/${image.id}`}>
+            <Link className="hover:scale-105 pt-4" to={`/projects/${image.id}`}>
               <img
-                className="w-100 h-100 rounded-2xl"
+                className="w-100 h-100  rounded-2xl"
                 src={image.src}
                 alt={image.title}
               />
