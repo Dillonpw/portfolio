@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { * } from './public/assets';
+import images from './images';
 
 const ProjectPage = () => {
   const { projectId } = useParams();
