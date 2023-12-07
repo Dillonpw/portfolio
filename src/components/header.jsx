@@ -105,17 +105,13 @@ export default function Header() {
           <p className="px-6 text-xl opacity-60">
             After graduating from College in 2019, I took a full time position
             as a 911 emergency dispatcher. Though the job could be demanding, it
-            also afforded me plenty of downtime which I used to learn web
-            development using free resources like freeCodeCamp and The Odin
-            Project. Since then I have been designing, building and continuing
-            to learn. Now I contribute to The Odin Project documentation and
-            other open source projects when I can, while building personal
-            projects and client projects in my spare time.
+            also provided me with time which I used to learn web development
+            using free resources like freeCodeCamp and The Odin Project. Now I
+            contribute to open source projects, and build personal projects in
+            my spare time.
           </p>
-          <button className="m-4 w-fit rounded-2xl p-3 outline outline-cyan-100 hover:scale-105 active:bg-cyan-200 active:text-slate-900 active:outline-none">
-            <Link to="/about" className="">
-              More
-            </Link>
+          <button className="m-4 w-fit rounded-2xl px-5 py-3 outline outline-cyan-100 hover:scale-105 active:bg-cyan-200 active:text-slate-900 active:outline-none">
+            <Link to="/about">More</Link>
           </button>
         </div>
       </div>

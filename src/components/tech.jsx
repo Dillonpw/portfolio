@@ -7,7 +7,6 @@ export default function Tech() {
     'Tailwind',
     'Express',
     'Astro',
-
   ])
   const [otherTools, setOtherTools] = useState([
     'Bootstrap',
@@ -22,7 +21,6 @@ export default function Tech() {
     'Three.js',
     'Next.js',
     'MongoDB',
-
   ])
 
   return (
@@ -32,7 +30,7 @@ export default function Tech() {
     >
       <div className="fade-in-4 grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
         <div>
-          <p className="pb-2 text-3xl font-bold">Stack</p>
+          <p className="pb-2 text-3xl font-bold">Tech</p>
           <ul className="list-none space-y-2">
             {devTools.map((dt) => (
               <li className="opacity-50" key={dt}>

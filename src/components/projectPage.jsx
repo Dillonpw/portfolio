@@ -1,5 +1,6 @@
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import images from './images'
+import logo from '/assets/logo.svg'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,11 +9,27 @@ const ProjectPage = () => {
   const { projectId } = useParams()
 
   const renderContent = () => {
+    const project = images.find((image) => image.id === projectId)
     switch (projectId) {
       case 'cv-template':
         return (
-          <div>
-            This is the CV Template Page
+          <main>
+            <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
+              <Link to="/" id="logo" className="justify-start px-2">
+                <img className="hover:scale-105" src={logo} alt="Logo" />
+              </Link>
+            </div>
+
+            <div className="flex items-center justify-center">
+              <img
+                className="w-100 h-100 items-center justify-center rounded-2xl"
+                src={project.src}
+                alt={project.title}
+              />
+            </div>
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
+
             <a
               id="github link cv-template"
               href="https://github.com/Dillonpw/cv-template"
@@ -33,14 +50,28 @@ const ProjectPage = () => {
               rel="noreferrer"
               aria-label="redirect to live preview"
             >
-              <FontAwesomeIcon icon={faUpRightFromSquare} />
+              <FontAwesomeIcon
+                className="mr-8 h-8 w-8 hover:scale-110"
+                icon={faUpRightFromSquare}
+              />
             </a>
-          </div>
+          </main>
         )
       case 'schedule-app':
         return (
-          <div>
-            This is the schedule app page
+          <main className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
+            <Link to="/" id="logo" className="justify-start px-2">
+              <img className="hover:scale-105" src={logo} alt="Logo" />
+            </Link>
+            <div className="flex items-center justify-center">
+              <img
+                className="w-100 h-100 items-center justify-center rounded-2xl"
+                src={project.src}
+                alt={project.title}
+              />
+            </div>
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
             <a
               id="github link schedule-app"
               href="https://github.com/Dillonpw/schedule-app"
@@ -61,14 +92,28 @@ const ProjectPage = () => {
               rel="noreferrer"
               aria-label="redirect to live preview schedule-app"
             >
-              <FontAwesomeIcon icon={faUpRightFromSquare} />
+              <FontAwesomeIcon
+                className="mr-8 h-8 w-8 hover:scale-110"
+                icon={faUpRightFromSquare}
+              />
             </a>
-          </div>
+          </main>
         )
       case 'pricing-toggle':
         return (
-          <div>
-            This is the pricing toggle{' '}
+          <main className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
+            <Link to="/" id="logo" className="justify-start px-2">
+              <img className="hover:scale-105" src={logo} alt="Logo" />
+            </Link>
+            <div className="flex items-center justify-center">
+              <img
+                className="w-100 h-100 items-center justify-center rounded-2xl"
+                src={project.src}
+                alt={project.title}
+              />
+            </div>
+            <h2>{project.title}</h2>
+            <p>{project.description}</p>
             <a
               id="github link pricing-toggle"
               href="https://github.com/Dillonpw/pricing-toggle"
@@ -89,9 +134,12 @@ const ProjectPage = () => {
               rel="noreferrer"
               aria-label="redirect to live preview pricing-toggle"
             >
-              <FontAwesomeIcon icon={faUpRightFromSquare} />
+              <FontAwesomeIcon
+                className="mr-8 h-8 w-8 hover:scale-110"
+                icon={faUpRightFromSquare}
+              />
             </a>
-          </div>
+          </main>
         )
       // Add more cases here for different projectIds
       default:
@@ -101,7 +149,6 @@ const ProjectPage = () => {
 
   return (
     <div>
-      Project Page for {projectId}
       {renderContent()} {}
     </div>
   )

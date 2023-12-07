@@ -4,7 +4,6 @@ import ProjectPage from './projectPage.jsx'
 import Content from './content.jsx'
 
 const App = () => {
-
   return (
     <>
       <div className="relative min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200 first-letter:m-0 ">

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overscroll-behavior: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
 #root {
   scroll-behavior: smooth;
   min-height: 100vh;
@@ -9,18 +17,27 @@
   margin: 0;
   padding: 0;
 }
-html,
-body {
-  overscroll-behavior-y: none;
+
+.w-100 {
+  width: 40rem;
 }
 
-body {
-  min-height: 100vh;
+.h-50 {
+  height: 25rem;
+}
+
+.h-100 {
+  height: 34rem;
+}
+
+.text {
+  color: white;
+  font-size: 16px;
+  text-align: center;
 }
 
 @keyframes fade-in {
-  0%,
-  49.99% {
+  0%, 49.99% {
     visibility: hidden;
     opacity: 0;
     transform: translateY(20px);
@@ -38,21 +55,12 @@ body {
 }
 
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
     transform: translateY(-5px);
   }
-}
-
-.button-bounce {
-  animation: bounce 1s infinite ease-in-out;
-}
-
-.button-bounce:hover {
-  animation: bounce 1s infinite ease-in-out;
 }
 
 .fade-in {
@@ -77,19 +85,17 @@ body {
   animation-delay: 1s;
 }
 
-.w-100 {
-  width:40rem;
+.button-bounce {
+  animation: bounce 1s infinite ease-in-out;
 }
 
-.h-50 {
-  height: 25rem;
-}
-.h-100 {
-  height: 34rem;
+.button-bounce:hover {
+  animation: bounce 1s infinite ease-in-out;
 }
 
-.text {
-  color: white;
-  font-size: 16px;
-  text-align: center;
+@media (min-width: 640px) {
+  .hover-scale:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
 }
