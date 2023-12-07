@@ -39,9 +39,9 @@ export default function Header() {
   return (
     <>
       <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
-          <Link to="/" id="logo" className="justify-start px-2">
-            <img className="hover:scale-105" src={logo} alt="Logo" />
-          </Link>
+        <Link to="/" id="logo" className="justify-start px-2">
+          <img className="hover:scale-105" src={logo} alt="Logo" />
+        </Link>
         <div className="items-end justify-center px-2 text-xl">
           <a
             className="m-2 hover:underline"
@@ -62,7 +62,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className="mx-8 mt-40 flex flex-col items-center justify-center pt-10 md:flex-row">
+      <div className="mx-8 mt-10 flex flex-col items-center justify-center pt-10 md:flex-row">
         <div className=" flex w-full flex-col px-6 md:w-1/2">
           <h1 id="home" className="fade-in px-5 pb-2 text-5xl">
             Dillon Walsh
@@ -101,17 +101,22 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="mt-5 flex w-full px-6 md:w-1/2">
-          <p className="fade-in-4 px-6 text-xl opacity-60">
+        <div className="fade-in-4 mt-40 flex w-full flex-col items-center px-6 md:w-1/2">
+          <p className="px-6 text-xl opacity-60">
             After graduating from College in 2019, I took a full time position
             as a 911 emergency dispatcher. Though the job could be demanding, it
             also afforded me plenty of downtime which I used to learn web
             development using free resources like freeCodeCamp and The Odin
             Project. Since then I have been designing, building and continuing
-            to learn. Now I contribute to The Odin Project documentation and other open source projects when I can, while building
-            personal projects and client projects in my spare time.
+            to learn. Now I contribute to The Odin Project documentation and
+            other open source projects when I can, while building personal
+            projects and client projects in my spare time.
           </p>
-          <Link to="/about" className="text-blue-500 hover:text-blue-800" />
+          <button className="m-4 w-fit rounded-2xl p-3 outline outline-cyan-100 hover:scale-105 active:bg-cyan-200 active:text-slate-900 active:outline-none">
+            <Link to="/about" className="">
+              More
+            </Link>
+          </button>
         </div>
       </div>
     </>
