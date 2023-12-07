@@ -10,8 +10,11 @@ const ProjectPage = () => {
 
   const renderContent = () => {
     const project = images.find((image) => image.id === projectId)
+
     switch (projectId) {
       case 'cv-template':
+      case 'schedule-app':
+      case 'pricing-toggle':
         return (
           <main>
             <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
@@ -20,138 +23,62 @@ const ProjectPage = () => {
               </Link>
             </div>
 
-            <div className="flex items-center justify-center">
+            <div className="flex flex-col items-center justify-center px-4">
               <img
                 className="w-100 h-100 items-center justify-center rounded-2xl"
                 src={project.src}
                 alt={project.title}
               />
+              <section className="justify-items-center">
+                <h2 className="mb-4 text-2xl font-bold">{project.title}</h2>
+                
+              </section>
+              <h3 className="self-start mt-8 text-xl font-bold">About</h3>
+              <p className="px-4 text-left opacity-60">
+                {project.description}
+              </p>
+              <h3 className="self-start mt-8 text-xl font-bold">Challenges</h3>
+              <p className="px-4 text-left opacity-60">
+                {project.challenge}
+              </p>
             </div>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
+            <div className=" flex justify-center pb-6">
+                  <a
+                    id={`github link ${projectId}`}
+                    href={project.githubLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="redirect to Github"
+                  >
+                    <FontAwesomeIcon
+                      className="mx-4 h-8 w-8 hover:scale-110"
+                      icon={faGithub}
+                    />
+                  </a>
+                  <a
+                    className="mx-4 h-8 w-8 hover:scale-110"
+                    id={`live preview link ${projectId}`}
+                    href={project.livePreviewLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="redirect to live preview"
+                  >
+                    <FontAwesomeIcon
+                      className="h-8 w-8 hover:scale-110"
+                      icon={faUpRightFromSquare}
+                    />
+                  </a>
+                </div>
+          </main>
+        )
 
-            <a
-              id="github link cv-template"
-              href="https://github.com/Dillonpw/cv-template"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="redirect to Github"
-            >
-              <FontAwesomeIcon
-                className="mr-8 h-8 w-8 hover:scale-110"
-                icon={faGithub}
-              />
-            </a>
-            <a
-              className="mr-8 h-8 w-8 hover:scale-110"
-              id="live preview link"
-              href="https://cv-template-navy.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="redirect to live preview"
-            >
-              <FontAwesomeIcon
-                className="mr-8 h-8 w-8 hover:scale-110"
-                icon={faUpRightFromSquare}
-              />
-            </a>
-          </main>
-        )
-      case 'schedule-app':
-        return (
-          <main className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
-            <Link to="/" id="logo" className="justify-start px-2">
-              <img className="hover:scale-105" src={logo} alt="Logo" />
-            </Link>
-            <div className="flex items-center justify-center">
-              <img
-                className="w-100 h-100 items-center justify-center rounded-2xl"
-                src={project.src}
-                alt={project.title}
-              />
-            </div>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <a
-              id="github link schedule-app"
-              href="https://github.com/Dillonpw/schedule-app"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="redirect to Github"
-            >
-              <FontAwesomeIcon
-                className="mr-8 h-8 w-8 hover:scale-110"
-                icon={faGithub}
-              />
-            </a>
-            <a
-              className="mr-8 h-8 w-8 hover:scale-110"
-              id="live preview link schedule-app"
-              href="https://schedule-app-mauve.vercel.app/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="redirect to live preview schedule-app"
-            >
-              <FontAwesomeIcon
-                className="mr-8 h-8 w-8 hover:scale-110"
-                icon={faUpRightFromSquare}
-              />
-            </a>
-          </main>
-        )
-      case 'pricing-toggle':
-        return (
-          <main className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
-            <Link to="/" id="logo" className="justify-start px-2">
-              <img className="hover:scale-105" src={logo} alt="Logo" />
-            </Link>
-            <div className="flex items-center justify-center">
-              <img
-                className="w-100 h-100 items-center justify-center rounded-2xl"
-                src={project.src}
-                alt={project.title}
-              />
-            </div>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <a
-              id="github link pricing-toggle"
-              href="https://github.com/Dillonpw/pricing-toggle"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="redirect to Github"
-            >
-              <FontAwesomeIcon
-                className="mr-8 h-8 w-8 hover:scale-110"
-                icon={faGithub}
-              />
-            </a>
-            <a
-              className="mr-8 h-8 w-8 hover:scale-110"
-              id="live preview link pricing toggle"
-              href="https://dillonpw.github.io/pricing-toggle/"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="redirect to live preview pricing-toggle"
-            >
-              <FontAwesomeIcon
-                className="mr-8 h-8 w-8 hover:scale-110"
-                icon={faUpRightFromSquare}
-              />
-            </a>
-          </main>
-        )
       // Add more cases here for different projectIds
       default:
         return <div>Oops! there's nothing here... </div>
     }
   }
 
-  return (
-    <div>
-      {renderContent()} {}
-    </div>
-  )
+  return <div>{renderContent()}</div>
 }
 
 export default ProjectPage

@@ -7,6 +7,7 @@ const About = () => {
       <Link to="/" id="logo" className="justify-start px-2">
         <img className="hover:scale-105" src={logo} alt="Logo" />
       </Link>
+      <h1>This page is under construction... wait how did you get here?</h1>
     </main>
   )
 }
