@@ -2,6 +2,8 @@ const images = [
   {
     id: 'cv-template',
     src: '/assets/cv-template.png',
+    livePreviewLink: 'https://cv-template-navy.vercel.app/',
+    githubLink: 'https://github.com/Dillonpw/cv-template',
     title: 'CV Template',
     challenge:'The toughest challenge with this particular project was figuring out how to create the individual sections of information for the education and experience fields. Initially, I was only able to fill out and submit one section. If I tried to create a new section, it would delete the first one and replace the data. After several different attempts and some searching for similar problems, I was able to come up with a solution by creating an array that would have its own state. This array would contain the data and accept additional data as well.' ,
     description:
@@ -11,6 +13,8 @@ const images = [
   {
     id: 'schedule-app',
     src: '/assets/schedule-app.png',
+    livePreviewLink: 'https://schedule-app-ts.vercel.app/',
+    githubLink: 'https://github.com/Dillonpw/Schedule-App-TS',
     title: 'Schedule App',
     challenge:'' ,
     description:
@@ -20,6 +24,8 @@ const images = [
   {
     id: 'pricing-toggle',
     src: '/assets/pricing-toggle.png',
+    livePreviewLink: 'https://dillonpw.github.io/pricing-toggle/',
+    githubLink: 'https://github.com/Dillonpw/pricing-toggle',
     title: 'Pricing Toggle',
     challenge:'' ,
     description:
