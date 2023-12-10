@@ -1,34 +1,37 @@
-import { useState } from 'react'
+import useScrollIn from './scrollIn'
 
 export default function Tech() {
-  const [devTools, setDevTools] = useState([
+  const [ref, isVisible] = useScrollIn();
+
+  const devTools = [
     'Typescript',
     'React',
     'Tailwind',
     'Express',
     'Astro',
-  ])
-  const [otherTools, setOtherTools] = useState([
+  ];
+  const otherTools = [
     'Bootstrap',
     'Git',
     'Vite',
     'Figma',
     'Vitest',
-  ])
-  const [learning, setLearning] = useState([
+  ];
+  const learning = [
     'Python',
     'Angular',
     'Three.js',
     'Next.js',
     'MongoDB',
-  ])
+  ];
 
   return (
     <div
+      ref={ref}
       id="tech"
-      className=" my-40 flex flex-col items-center justify-center rounded-md p-10 text-center"
+      className={`scroll-in ${isVisible ? 'visible' : ''} my-40 flex flex-col items-center justify-center rounded-md p-10 text-center`}
     >
-      <div className="fade-in-4 grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
+      <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
         <div>
           <p className="pb-2 text-3xl font-bold">Tech</p>
           <ul className="list-none space-y-2">

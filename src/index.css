@@ -93,6 +93,17 @@ body {
   animation: bounce 1s infinite ease-in-out;
 }
 
+.scroll-in {
+  opacity: 0;
+  transform: translateY(15px);
+  transition: opacity 3s ease-out, transform 2s ease-out;
+}
+
+.scroll-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media (min-width: 640px) {
   .hover-scale:hover {
     transform: scale(1.05);

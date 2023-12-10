@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
+import useScrollIn from './scrollIn'
 import images from './images'
 
 
 export default function Projects() {
+  const [ref, isVisible] = useScrollIn();
+
   return (
-    <div className="fade-in-4 flex flex-col">
+    <div ref={ref} className={`scroll-in ${isVisible ? 'visible' : ''} flex flex-col`}>
       <h3 id="projects" className="mb-4 text-center text-3xl font-bold">
         Projects
       </h3>
