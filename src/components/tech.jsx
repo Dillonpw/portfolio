@@ -5,7 +5,7 @@ export default function Tech() {
 
   const devTools = [
     'JavaScript',
-    'Typescript',
+    'TypeScript',
     'React',
     'Tailwind',
     'Express',
