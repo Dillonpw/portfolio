@@ -4,11 +4,11 @@ export default function Tech() {
   const [ref, isVisible] = useScrollIn();
 
   const devTools = [
+    'JavaScript',
     'Typescript',
     'React',
     'Tailwind',
     'Express',
-    'Astro',
   ];
   const otherTools = [
     'Git',
@@ -20,7 +20,6 @@ export default function Tech() {
   const learning = [
     'Astro',
     'Python',
-    'Angular',
     'Three.js',
     'Next.js',
     'MongoDB',
