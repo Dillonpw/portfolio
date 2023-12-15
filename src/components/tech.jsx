@@ -4,25 +4,29 @@ export default function Tech() {
   const [ref, isVisible] = useScrollIn();
 
   const devTools = [
+    'Javascript',
     'Typescript',
     'React',
     'Tailwind',
     'Express',
-    'Astro',
+    'Bootstrap',
+    
+    
   ];
   const otherTools = [
-    'Bootstrap',
     'Git',
+    'VS Code',
     'Vite',
     'Figma',
     'Vitest',
   ];
   const learning = [
     'Python',
-    'Angular',
-    'Three.js',
     'Next.js',
     'MongoDB',
+    'Astro',
+    'Cyber Security',
+    'StyleX',
   ];
 
   return (
@@ -53,7 +57,7 @@ export default function Tech() {
           </ul>
         </div>
         <div>
-          <p className="pb-2 text-3xl font-bold">Learning</p>
+          <p className="pb-2 text-3xl font-bold">What I'm Learning</p>
           <ul className="list-none space-y-2">
             {learning.map((le) => (
               <li className="opacity-50" key={le}>
