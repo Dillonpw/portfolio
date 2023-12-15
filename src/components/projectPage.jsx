@@ -13,7 +13,7 @@ const ProjectPage = () => {
 
     switch (projectId) {
       case 'cv-template':
-      case 'schedule-app':
+      case 'Dispatcher Cheat Sheet':
       case 'pricing-toggle':
         return (
           <main>

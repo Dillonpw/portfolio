@@ -96,7 +96,7 @@ body {
 .scroll-in {
   opacity: 0;
   transform: translateY(15px);
-  transition: opacity 3s ease-out, transform 2s ease-out;
+  transition: opacity 1s ease-out, transform 2s ease-out;
 }
 
 .scroll-in.visible {
