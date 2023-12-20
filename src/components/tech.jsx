@@ -7,7 +7,8 @@ export default function Tech() {
     'JavaScript',
     'TypeScript',
     'React',
-    'Tailwind',
+    'Tailwind CSS',
+    'Astro',
     'Express',
   ];
   const otherTools = [
@@ -18,7 +19,6 @@ export default function Tech() {
     'Vitest',
   ];
   const learning = [
-    'Astro',
     'Python',
     'Three.js',
     'Next.js',
