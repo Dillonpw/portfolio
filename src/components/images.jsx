@@ -22,6 +22,7 @@ const images = [
       'The toughest challenge with this particular project was figuring out how to create the individual sections of information for the education and experience fields. Initially, I was only able to fill out and submit one section. If I tried to create a new section, it would delete the first one and replace the data. After several different attempts and some searching for similar problems, I was able to come up with a solution by creating an array that would have its own state. This array would contain the data and accept additional data as well.',
     description:
       'A React application where a user is able to view and print a basic resume by following the template. The user has the ability to update their personal info, work history, and education, adding multiple work and education items if they wish and delete entries as well. Upon visiting the page, the template will be filled out with generic information to give the user an idea of what the finished product may look like.',
+    mobileImg: '',
   },
 
   {
@@ -34,6 +35,7 @@ const images = [
       'I had trouble properly displaying the background SVG files for this project for a while, but after some research online I was able to get them functioning to my liking, building the Toggle switch was also a challenge and It took a lot more CSS than i was hoping it would to build; once again I found I was far from the first person to run into theses issues and was able to apply solutions I may not have come up with myself.',
     description:
       'A simple pricing component to be applied to a landing page built with HTML, CSS and JS. In theory the buttons would redirect to more infomation but this is a standalone page. There is a toggle switch to display either annual cost plans or monthyly plans. The page is responsive, adjusting its shape for small screens.',
+    mobileImg: '/assets/pricing-toggle-m.png',
   },
 ]
 

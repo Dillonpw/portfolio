@@ -23,7 +23,7 @@ const ProjectPage = () => {
               </Link>
             </div>
 
-            <div className="flex flex-col items-center justify-center px-4 lg:flex-row">
+            <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
               <img
                 className="w-100 h-100 m-2 items-center justify-center rounded-2xl"
                 src={project.src}
