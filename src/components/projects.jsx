@@ -20,7 +20,7 @@ export default function Projects() {
           >
             <Link className="block hover-scale " to={`/projects/${image.id}`}>
               <img
-                className="w-full h-auto rounded-2xl object-cover"
+                className="w-100 h-auto rounded-2xl object-cover"
                 src={image.src}
                 alt={image.title}
               />

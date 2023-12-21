@@ -15,7 +15,7 @@ const images = [
   {
     id: 'cv-template',
     src: '/assets/cv-template.png',
-    mobileImg: 'cv-template-m',
+    mobileImg: '/assets/cv-template-m.png',
     livePreviewLink: 'https://cv-template-navy.vercel.app/',
     githubLink: 'https://github.com/Dillonpw/cv-template',
     title: 'CV Template',

@@ -29,7 +29,7 @@ export default function Tech() {
     <div
       ref={ref}
       id="tech"
-      className={`scroll-in ${isVisible ? 'visible' : ''} my-40 flex flex-col items-center justify-center rounded-md p-10 text-center`}
+      className={`scroll-in ${isVisible ? 'visible' : ''} my-20 md:my-40 flex flex-col items-center justify-center rounded-md p-10 text-center`}
     >
       <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
         <div>
