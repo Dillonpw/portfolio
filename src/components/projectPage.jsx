@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import images from './images'
 import logo from '/assets/logo.svg'
@@ -7,6 +8,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const ProjectPage = () => {
   const { projectId } = useParams()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [projectId])
 
   const renderContent = () => {
     const project = images.find((image) => image.id === projectId)
@@ -25,7 +30,7 @@ const ProjectPage = () => {
 
             <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
               <img
-                className="w-100 h-auto m-2 items-center justify-center rounded-2xl"
+                className="w-100 m-2 h-auto items-center justify-center rounded-2xl"
                 src={project.src}
                 alt={project.title}
               />
@@ -38,9 +43,7 @@ const ProjectPage = () => {
             <section className="ml-4 flex flex-col items-center justify-center">
               <h2 className="mb-4 text-2xl font-bold">{project.title}</h2>
 
-              <h3 className="mt-8 text-xl font-bold">
-                About This Project
-              </h3>
+              <h3 className="mt-8 text-xl font-bold">About This Project</h3>
               <p className="max-w-100 px-4 text-left opacity-60">
                 {project.description}
               </p>
@@ -49,7 +52,7 @@ const ProjectPage = () => {
                 {project.challenge}
               </p>
             </section>
-            <div className=" flex justify-center pb-6">
+            <div className=" mt-4 flex  justify-center pb-6">
               <a
                 id={`github link ${projectId}`}
                 href={project.githubLink}
@@ -79,7 +82,6 @@ const ProjectPage = () => {
           </main>
         )
 
-      // Add more cases here for different projectIds
       default:
         return <div>Oops! there's nothing here... </div>
     }
