@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import images from './images'
+import useScrollIn from './scrollIn'
 import logo from '/assets/logo.svg'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
@@ -15,13 +16,14 @@ const ProjectPage = () => {
 
   const renderContent = () => {
     const project = images.find((image) => image.id === projectId)
+    const [ref, isVisible] = useScrollIn()
 
     switch (projectId) {
       case 'cv-template':
       case 'dispatcher-cheat-sheet':
       case 'pricing-toggle':
         return (
-          <main>
+          <main ref={ref} className={`scroll-in ${isVisible ? 'visible' : ''}`}>
             <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
               <Link to="/" id="logo" className="justify-start px-2">
                 <img className="hover:scale-105" src={logo} alt="Logo" />
@@ -41,7 +43,7 @@ const ProjectPage = () => {
               />
             </div>
             <section className="ml-4 flex flex-col items-center justify-center">
-              <h2 className="mb-4 text-2xl font-bold">{project.title}</h2>
+              <h2 className="m-4 text-3xl font-bold">{project.title}</h2>
 
               <h3 className="mt-8 text-xl font-bold">About This Project</h3>
               <p className="max-w-100 px-4 text-left opacity-60">
