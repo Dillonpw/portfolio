@@ -1,7 +1,7 @@
 import useScrollIn from './scrollIn'
 
 export default function Tech() {
-  const [ref, isVisible] = useScrollIn();
+  const [ref, isVisible] = useScrollIn()
 
   const devTools = [
     'JavaScript',
@@ -10,26 +10,17 @@ export default function Tech() {
     'Tailwind CSS',
     'Astro',
     'Express',
-  ];
-  const otherTools = [
-    'Git',
-    'VS Code',
-    'Vite',
-    'Figma',
-    'Vitest',
-  ];
-  const learning = [
-    'Python',
-    'Three.js',
-    'Next.js',
-    'MongoDB',
-  ];
+  ]
+  const otherTools = ['Git', 'VS Code', 'Vite', 'Figma', 'Vitest']
+  const learning = ['Python', 'Three.js', 'Next.js', 'MongoDB']
 
   return (
     <div
       ref={ref}
       id="tech"
-      className={`scroll-in ${isVisible ? 'visible' : ''} my-20 md:my-40 flex flex-col items-center justify-center rounded-md p-10 text-center`}
+      className={`scroll-in ${
+        isVisible ? 'visible' : ''
+      } my-20 flex flex-col items-center justify-center rounded-md p-10 text-center md:my-40`}
     >
       <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
         <div>

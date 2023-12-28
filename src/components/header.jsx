@@ -106,9 +106,10 @@ export default function Header() {
             After graduating from College in 2019, I took a full time position
             as a 911 emergency dispatcher. Though the job could be demanding, it
             also provided me with the free time I needed to learn web
-            development using free resources like freeCodeCamp, The Odin
-            Project and official documentation. Now I contribute to open source projects, and build personal
-            projects in my spare time.
+            development using free resources like freeCodeCamp, The Odin Project
+            and official documentation. Lately, I've been busy contributing to
+            open source projects, building projects for myself and some things
+            for a some good people.
           </p>
           <button className="m-4 hidden w-fit rounded-2xl px-5 py-3 outline outline-cyan-100 hover:scale-105 active:bg-cyan-200 active:text-slate-900 active:outline-none">
             <Link to="/about">More</Link>

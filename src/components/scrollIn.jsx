@@ -1,17 +1,17 @@
-import { useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { useEffect, useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const useScrollIn = () => {
-  const [isInView, setInView] = useState(false);
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const [isInView, setInView] = useState(false)
+  const { ref, inView } = useInView({ triggerOnce: true })
 
   useEffect(() => {
     if (inView) {
-      setInView(true);
+      setInView(true)
     }
-  }, [inView]);
+  }, [inView])
 
-  return [ref, isInView];
-};
+  return [ref, isInView]
+}
 
-export default useScrollIn;
+export default useScrollIn
