@@ -42,7 +42,7 @@ export default function Header() {
         <Link to="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </Link>
-        <div className="items-end justify-center px-2 text-xl">
+        <div className="items-end justify-center px-2 text-3xl">
           <a
             className="m-2 hover:underline"
             href="#about"
