@@ -3,7 +3,7 @@ const images = [
     id: 'dispatcher-cheat-sheet',
     src: '/assets/DCS-home.png',
     mobileImg: '/assets/DCS-home-m.png',
-    livePreviewLink: 'https://dcs-roan.vercel.app/',
+    livePreviewLink: 'https://dsc-roan.vercel.app/',
     githubLink: 'https://github.com/Dillonpw/DCS',
     title: 'Dispatcher Cheat Sheet',
     challenge:
