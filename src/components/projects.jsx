@@ -18,9 +18,9 @@ export default function Projects() {
             key={image.id}
             className="flex flex-col items-center mb-4"
           >
-            <Link className="block hover-scale" to={`/projects/${image.id}`}>
+            <Link className="block hover-scale " to={`/projects/${image.id}`}>
               <img
-                className="w-100 h-auto rounded-2xl object-cover"
+                className="w-100 h-100 rounded-2xl"
                 src={image.src}
                 alt={image.title}
               />

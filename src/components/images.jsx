@@ -1,10 +1,10 @@
 const images = [
   {
     id: 'dispatcher-cheat-sheet',
-    src: '/assets/Schedule App.png',
-    mobileImg: '/assets/Schedule App m.png',
-    livePreviewLink: 'https://dsc-roan.vercel.app/',
-    githubLink: 'https://github.com/Dillonpw/DSC',
+    src: '/assets/DCS-home.png',
+    mobileImg: '/assets/DCS-home-m.png',
+    livePreviewLink: 'https://dcs-roan.vercel.app/',
+    githubLink: 'https://github.com/Dillonpw/DCS',
     title: 'Dispatcher Cheat Sheet',
     challenge:
       'I originally built this project using vanilla JavaScript, and after deciding to build the project up a bit I wanted to challenge myself and covert it to typeScript for some practice. This was the first project I Built using TypeScript and I struggled a bit at first with typing this correctly and sometimes skipped types but as I moved through the documentation things becmae clear and the error responses were very helpful as I converted the code.',
