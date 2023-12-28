@@ -19,7 +19,7 @@ export default function Projects() {
           <div key={image.id} className="mb-4 flex flex-col items-center">
             <Link className="hover-scale block " to={`/projects/${image.id}`}>
               <img
-                className="w-100 h-100 rounded-2xl"
+                className="w-100 sm:h-100 rounded-2xl h-auto "
                 src={image.src}
                 alt={image.title}
               />
