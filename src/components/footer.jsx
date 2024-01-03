@@ -6,7 +6,7 @@ export default function Footer() {
           Built using <b>React</b> and <b>Tailwind</b>, with some elements
           designed in Figma, Deployed through Vercel.
           <br />
-          Created by Dillon Walsh &copy;2023 All Rights Reserved
+          Created by Dillon Walsh &copy;2024 All Rights Reserved
         </p>
       </footer>
     </>
