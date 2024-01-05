@@ -112,7 +112,7 @@ export default function Header() {
             for a some good people.
           </p>
           <button className="m-4 hidden w-fit rounded-2xl px-5 py-3 outline outline-cyan-100 hover:scale-105 active:bg-cyan-200 active:text-slate-900 active:outline-none">
-            <Link to="/about">More</Link>
+            <Link to="/about" description="More info about me" >More</Link>
           </button>
         </div>
       </div>

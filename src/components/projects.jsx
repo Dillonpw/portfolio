@@ -17,7 +17,7 @@ export default function Projects() {
       <div className="m-6 grid grid-cols-1 gap-4 md:grid-cols-2">
         {images.map((image) => (
           <div key={image.id} className="mb-4 flex flex-col items-center">
-            <Link className="hover-scale block " to={`/projects/${image.id}`}>
+            <Link description="More info about projects" className="hover-scale block " to={`/projects/${image.id}`}>
               <img
                 className="w-100 sm:h-100 rounded-2xl h-auto "
                 src={image.src}
