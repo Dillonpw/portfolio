@@ -11,8 +11,8 @@ export default function Tech() {
     'Astro',
     'Express',
   ]
-  const otherTools = ['Git', 'VS Code', 'Vite', 'Figma', 'Vitest']
-  const learning = ['Python', 'Three.js', 'Next.js', 'MongoDB']
+  const otherTools = ['Git', 'VS Code', 'Vite', 'Figma',]
+  const learning = ['Python', 'React Native', 'Next.js', 'MongoDB']
 
   return (
     <div
