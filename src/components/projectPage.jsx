@@ -22,6 +22,7 @@ const ProjectPage = () => {
       case 'cv-template':
       case 'dispatcher-cheat-sheet':
       case 'pricing-toggle':
+      case 'ecommerce-site':
         return (
           <main ref={ref} className={`scroll-in ${isVisible ? 'visible' : ''}`}>
             <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
@@ -77,7 +78,7 @@ const ProjectPage = () => {
                 {project.description}
               </p>
               <h3 className="mt-8 text-xl font-bold">Challenges</h3>
-              <p className="max-w-100 px-4 text-left opacity-60">
+              <p className="max-w-100 mb-10 px-4 text-left opacity-60">
                 {project.challenge}
               </p>
             </section>

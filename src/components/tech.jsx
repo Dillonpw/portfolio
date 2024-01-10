@@ -3,16 +3,16 @@ import useScrollIn from './scrollIn'
 export default function Tech() {
   const [ref, isVisible] = useScrollIn()
 
-  const devTools = [
-    'JavaScript',
+  const devTools = ['JavaScript', 'React', 'Tailwind CSS', 'Astro', 'Express']
+  const otherTools = ['Git', 'VS Code', 'Vite', 'Figma']
+
+  const learning = [
     'TypeScript',
-    'React',
-    'Tailwind CSS',
-    'Astro',
-    'Express',
+    'Python',
+    'React Native',
+    'Next.js',
+    'MongoDB',
   ]
-  const otherTools = ['Git', 'VS Code', 'Vite', 'Figma',]
-  const learning = ['Python', 'React Native', 'Next.js', 'MongoDB']
 
   return (
     <div
