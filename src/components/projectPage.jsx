@@ -21,7 +21,7 @@ const ProjectPage = () => {
     switch (projectId) {
       case 'cv-template':
       case 'dispatcher-cheat-sheet':
-      case 'pricing-toggle':
+      case 'slicing':
       case 'ecommerce-site':
         return (
           <main ref={ref} className={`scroll-in ${isVisible ? 'visible' : ''}`}>
@@ -33,7 +33,7 @@ const ProjectPage = () => {
 
             <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
               <img
-                className="w-100 h-100 m-2 items-center justify-center rounded-2xl"
+                className="w-100 h-auto m-2 items-center justify-center rounded-2xl"
                 src={project.src}
                 alt={project.title}
               />
