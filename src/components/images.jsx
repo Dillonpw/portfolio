@@ -42,7 +42,8 @@ const images = [
     id: 'slicing',
     src: '/assets/pricing-toggle.png',
     mobileImg: '/assets/pricing-toggle-m.png',
-    livePreviewLink: 'https://www.frontendmentor.io/solutions/pricing-component-build-with-vanilla-js-css-html-ONGCkzEVdW',
+    livePreviewLink:
+      'https://www.frontendmentor.io/solutions/pricing-component-build-with-vanilla-js-css-html-ONGCkzEVdW',
     githubLink: 'https://github.com/Dillonpw/pricing-toggle',
     title: 'Design slicing',
     challenge:

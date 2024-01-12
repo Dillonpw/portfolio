@@ -38,7 +38,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
+      <div className="mx-8 flex flex-row items-center justify-between p-6">
         <Link to="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </Link>
@@ -62,7 +62,7 @@ export default function Header() {
           </a>
         </div>
       </div>
-      <div className="mx-8 mt-10 flex flex-col items-center justify-center pt-10 md:flex-row">
+      <div className="mx-8 mt-10 flex flex-col items-center justify-center md:flex-row">
         <div className=" flex w-full flex-col px-6 md:w-1/2">
           <h1 id="home" className="fade-in px-5 pb-2 text-5xl">
             Dillon Walsh

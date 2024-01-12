@@ -18,7 +18,7 @@ const Content = () => {
         <button
           id="arrow"
           onClick={scrollTop}
-          className="button-bounce fixed bottom-4 right-10 z-50 hidden h-1 w-1 items-center justify-center rounded-full bg-cyan-50 p-4 text-black hover:bg-cyan-200 md:flex"
+          className="button-bounce fixed bottom-4 right-10 z-50 hidden h-1 w-1 items-center justify-center rounded-full bg-cyan-200 p-4 text-black hover:bg-cyan-200 hover:opacity-60 md:flex"
           aria-label="Scroll to top"
         >
           &uarr;
