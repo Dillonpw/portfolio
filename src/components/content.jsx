@@ -15,8 +15,6 @@ const Content = () => {
     <>
       <div className="relative min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200 first-letter:m-0 ">
         <Header />
-        <Contact />
-
         <button
           id="arrow"
           onClick={scrollTop}
@@ -25,9 +23,9 @@ const Content = () => {
         >
           &uarr;
         </button>
-
         <Tech />
         <Projects />
+        <Contact />
         <Footer />
       </div>
     </>
