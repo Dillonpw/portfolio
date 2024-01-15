@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import useScrollIn from './ScrollInPage'
-import images from './ImagesPage'
+import useScrollIn from './ScrollIn'
+import images from './Images'
 
 const Projects = () => {
   const [ref, isVisible] = useScrollIn()

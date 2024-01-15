@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import images from './Images'
-import useScrollIn from './ScrollInPage'
+import useScrollIn from './ScrollIn'
 import logo from '/assets/logo.svg'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'

@@ -1,4 +1,4 @@
-import useScrollIn from './ScrollInPage'
+import useScrollIn from './ScrollIn'
 
 const Contact = () => {
   const [ref, isVisible] = useScrollIn()
