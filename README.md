@@ -1,7 +1,7 @@
 # Dillonpw's Web Development Portfolio
 
 ## Introduction
-Welcome to my professional portfolio, a public showcase of my work, learning journey, and everything pertinent to my career as a Web Developer. This portfolio is not just a collection of projects, but a reflection of my passion for web development and my commitment to continuous learning and improvement.
+Welcome to my professional portfolio, a public showcase of my work, and everything pertinent to my career as a Web Developer. This portfolio is not just a collection of projects, but a reflection of my passion for web development and my commitment to continuous learning and improvement.
 
 ## Technical Stack
 - **React:** Leveraging the power of React for building dynamic and responsive user interfaces.
