@@ -15,16 +15,16 @@ const Contact = () => {
       ref={ref}
       className={`scroll-in ${
         isVisible ? 'visible' : ''
-      } m-6 flex flex-col items-center border-cyan-200`}
+      } my-6 border-cyan-200 p-10`}
     >
       {!submitState ? (
         <form
-          className="flex flex-col"
+          className="flex flex-col w-full"
           action="https://api.web3forms.com/submit"
           method="POST"
           onSubmit={handleSubmit}
         >
-          <p className="text-center text-3xl">Want to get in touch?</p>
+          <p className="mb-3 text-3xl">Want to get in touch?</p>
           <input
             type="hidden"
             name="access_key"
@@ -34,7 +34,7 @@ const Contact = () => {
             Email:{' '}
           </label>
           <input
-            className="my-2 h-10 rounded-md p-2"
+            className="my-2 h-10 max-w-[400px] rounded-md p-2"
             type="email"
             name="email"
             id="email"
@@ -45,7 +45,7 @@ const Contact = () => {
             Message:
           </label>
           <textarea
-            className="my-2 rounded-lg p-2"
+            className="text-sky-950 my-2 max-w-[400px] rounded-lg p-2"
             name="message"
             rows="6"
             required
@@ -53,7 +53,7 @@ const Contact = () => {
           ></textarea>
           <div className="h-captcha my-2" data-captcha="true"></div>
           <button
-            className="w-fit px-8 items-center justify-center rounded-lg bg-cyan-200 p-4 text-sky-950 opacity-90  hover:scale-105 hover:opacity-100"
+            className="w-fit items-center justify-center rounded-lg bg-cyan-200 p-4 px-8 text-sky-950 opacity-90  hover:scale-105 hover:opacity-100"
             type="submit"
           >
             Send
