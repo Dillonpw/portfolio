@@ -10,10 +10,12 @@ Welcome to my professional portfolio, a public showcase of my work, learning jou
 - **Hosted on Vercel:** Deployed on Vercel for superior performance and reliability.
 
 ## Features
+- **About Me:** A brief paragraph about me and how I ended up where I am today.
 - **Project Showcase:** A curated selection of my best work, demonstrating my skills in various aspects of web development.
 - **Tech:** A few lists of the tech I use daily, as well as what I'm interested in using in the future.
 
 - ## Coming Soon
+- **More About Me:** A page with more info about who I am, what I like to do etc.
 - **Learning Journey:** Chronicles my growth and evolution as a developer, highlighting key learnings and milestones.
 - **Professional Insights:** A section dedicated to articles, blogs, or tutorials that I've written, offering a glimpse into my expertise and thought process.
 
