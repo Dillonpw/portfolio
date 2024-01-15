@@ -1,3 +1,23 @@
-<h1>Portfolio</h1>
-<h3>Built with React and Tailwind on Vite template, hosted on Vercel</h3>
-My public website for showing work, learning and anything else relevant to my Work as a Web Developer.
+# Dillonpw's Web Development Portfolio
+
+## Introduction
+Welcome to my professional portfolio, a public showcase of my work, learning journey, and everything pertinent to my career as a Web Developer. This portfolio is not just a collection of projects, but a reflection of my passion for web development and my commitment to continuous learning and improvement.
+
+## Technical Stack
+- **React:** Leveraging the power of React for building dynamic and responsive user interfaces.
+- **Tailwind CSS:** Utilizing Tailwind for efficient and customizable styling, ensuring a sleek and modern look using no component libraries, all content styled by me.
+- **Vite:** Built on the Vite template for fast and lean development experience.
+- **Hosted on Vercel:** Deployed on Vercel for superior performance and reliability.
+
+## Features
+- **Project Showcase:** A curated selection of my best work, demonstrating my skills in various aspects of web development.
+- **Tech:** A few lists of the tech I use daily, as well as what I'm interested in using in the future.
+
+- ## Coming Soon
+- **Learning Journey:** Chronicles my growth and evolution as a developer, highlighting key learnings and milestones.
+- **Professional Insights:** A section dedicated to articles, blogs, or tutorials that I've written, offering a glimpse into my expertise and thought process.
+
+## Why Visit My Portfolio?
+- **For Hiring Managers:** Gain a comprehensive view of my technical capabilities and potential fit for your team.
+- **For Fellow Developers:** Find inspiration, collaborate, or engage in knowledge sharing.
+- **For Aspiring Developers:** Learn from my journey, the challenges I faced, and how I overcame them.
