@@ -3,7 +3,7 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import logo from '/assets/logo.svg'
 
-export default function Header() {
+const Header = () => {
   const scrollAbout = () => {
     window.scrollTo({
       top: 90,
@@ -116,3 +116,5 @@ export default function Header() {
     </>
   )
 }
+
+export default Header

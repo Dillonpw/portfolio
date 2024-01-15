@@ -1,6 +1,6 @@
-import useScrollIn from './scrollIn'
+import useScrollIn from './ScrollIn'
 
-export default function Tech() {
+const Tech = () => {
   const [ref, isVisible] = useScrollIn()
 
   const devTools = ['JavaScript', 'React', 'Tailwind CSS', 'Astro', 'Express']
@@ -57,3 +57,5 @@ export default function Tech() {
     </div>
   )
 }
+
+export default Tech

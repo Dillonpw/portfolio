@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
-import useScrollIn from './scrollIn'
-import images from './images'
+import useScrollIn from './ScrollIn'
+import images from './Images'
 
-export default function Projects() {
+const Projects = () => {
   const [ref, isVisible] = useScrollIn()
 
   return (
@@ -37,3 +37,4 @@ export default function Projects() {
     </div>
   )
 }
+export default Projects

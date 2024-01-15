@@ -1,4 +1,4 @@
-export default function Footer() {
+const Footer = () => {
   return (
     <>
       <footer className="mt-6 flex items-center justify-center pb-6 pt-10 text-center text-sm">
@@ -12,3 +12,5 @@ export default function Footer() {
     </>
   )
 }
+
+export default Footer

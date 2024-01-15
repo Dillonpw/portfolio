@@ -1,7 +1,8 @@
-import Footer from './footer.jsx'
-import Header from './header.jsx'
-import Projects from './projects.jsx'
-import Tech from './tech.jsx'
+import Contact from './Contact.jsx'
+import Footer from './Footer.jsx'
+import Header from './Header.jsx'
+import Projects from './Projects.jsx'
+import Tech from './Tech.jsx'
 
 const Content = () => {
   const scrollTop = () => {
@@ -14,6 +15,7 @@ const Content = () => {
     <>
       <div className="relative min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200 first-letter:m-0 ">
         <Header />
+        <Contact />
 
         <button
           id="arrow"
