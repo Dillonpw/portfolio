@@ -1,8 +1,8 @@
 import Contact from './Contact.jsx'
-import Footer from './Footer.jsx'
-import Header from './Header.jsx'
-import Projects from './Projects.jsx'
-import Tech from './Tech.jsx'
+import Footer from './FooterPage.jsx'
+import Header from './HeaderPage.jsx'
+import Projects from './ProjectsPage.jsx'
+import Tech from './TechPage.jsx'
 
 const Content = () => {
   const scrollTop = () => {
