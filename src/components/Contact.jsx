@@ -2,7 +2,8 @@ import useScrollIn from './ScrollIn'
 import { useState } from 'react'
 
 const Contact = () => {
-  const [result, setResult] = useState()
+  const [result, setResult] = useState('')
+  const [isEmailSubmitted, setIsEmailSubmitted] = useState(false)
   const [ref, isVisible] = useScrollIn()
 
   const onSubmit = async (event) => {
@@ -20,14 +21,20 @@ const Contact = () => {
     if (res.success) {
       console.log('Success', res)
       setResult(res.message)
+      setIsEmailSubmitted(true)
     } else {
       console.log('Error', res)
       setResult(res.message)
     }
   }
 
-  return (
-    <div
+  return isEmailSubmitted ? (
+    <div className="m-8 text-3xl">
+      <p>{result}</p>
+      <h1 className="text-3xl">Thank you for reaching out!</h1>
+    </div>
+  ) : (
+    <aside
       ref={ref}
       className={`scroll-in ${
         isVisible ? 'visible' : ''
@@ -39,7 +46,7 @@ const Contact = () => {
           Email:
         </label>
         <input
-          className="my-2 h-10 w-[50%] rounded-md p-2"
+          className="my-2 h-10 w-[50%] rounded-md p-2 text-black"
           type="email"
           name="email"
           id="email"
@@ -51,7 +58,7 @@ const Contact = () => {
           Message:
         </label>
         <textarea
-          className="my-2 w-[70%] rounded-lg p-2"
+          className="my-2 w-[70%] rounded-lg p-2 text-black"
           name="message"
           id="message"
           rows="6"
@@ -67,7 +74,7 @@ const Contact = () => {
         </button>
       </form>
       <span className="text-center">{result}</span>
-    </div>
+    </aside>
   )
 }
 
