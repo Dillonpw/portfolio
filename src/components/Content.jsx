@@ -1,6 +1,5 @@
 import Contact from './Contact.jsx'
 import Footer from './Footer.jsx'
-import Header from './Header.jsx'
 import Projects from './Projects.jsx'
 import Tech from './Tech.jsx'
 
