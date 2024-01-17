@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import About from './MoreAbout.jsx'
+import Content from './Content.jsx'
 import ProjectPage from './ProjectPage.jsx'
 
 const App = () => {
