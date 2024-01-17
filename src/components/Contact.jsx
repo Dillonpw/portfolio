@@ -51,14 +51,13 @@ const Contact = () => {
           Message:
         </label>
         <textarea
-          className="my-2 w-[70%] rounded-lg p-2 text-sky-950"
+          className="my-2 w-[70%] rounded-lg p-2"
           name="message"
           id="message"
           rows="6"
           required
           placeholder="Your message..."
         ></textarea>
-        <div className="h-captcha my-2" data-captcha="true"></div>
 
         <button
           className="w-fit items-center justify-center rounded-lg bg-cyan-200 px-8 py-4 text-sky-950 opacity-90 hover:scale-105 hover:opacity-100"
