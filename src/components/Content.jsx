@@ -1,9 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import About from './MoreAbout.jsx'
-import ProjectPage from './ProjectPage.jsx'
-import Content from './Content.jsx'
+import Contact from './Contact.jsx'
+import Footer from './Footer.jsx'
+import Projects from './Projects.jsx'
+import Tech from './Tech.jsx'
 
-const App = () => {
+const Content = () => {
   const scrollTop = () => {
     window.scrollTo({
       top: 0,
@@ -30,4 +30,4 @@ const App = () => {
     </>
   )
 }
-export default App
+export default Content
