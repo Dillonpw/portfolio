@@ -4,28 +4,16 @@ import ProjectPage from './ProjectPage.jsx'
 import Content from './Content.jsx'
 
 const App = () => {
-  const scrollTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
-  }
   return (
     <>
-      <div className="relative min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200 first-letter:m-0 ">
-        <Header />
-        <button
-          id="arrow"
-          onClick={scrollTop}
-          className="button-bounce fixed bottom-4 right-10 z-50 hidden h-1 w-1 items-center justify-center rounded-full bg-cyan-200 p-4 text-black hover:bg-cyan-200 hover:opacity-60 md:flex"
-          aria-label="Scroll to top"
-        >
-          &uarr;
-        </button>
-        <Tech />
-        <Projects />
-        <Contact />
-        <Footer />
+      <div className="relative m-0 min-h-full bg-gradient-to-br from-sky-950 to-slate-900 p-0 text-cyan-200">
+        <Router>
+          <Routes>
+            <Route path="/" element={<Content />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects/:projectId" element={<ProjectPage />} />
+          </Routes>
+        </Router>
       </div>
     </>
   )
