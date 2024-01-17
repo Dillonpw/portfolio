@@ -37,7 +37,7 @@ const Header = () => {
   }
 
   return (
-    <>
+    <section>
       <div className="mx-8 flex flex-row items-center justify-between p-6">
         <Link to="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
@@ -113,7 +113,7 @@ const Header = () => {
           </p>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

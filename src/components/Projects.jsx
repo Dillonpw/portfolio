@@ -6,7 +6,7 @@ const Projects = () => {
   const [ref, isVisible] = useScrollIn()
 
   return (
-    <div
+    <section
       ref={ref}
       className={`scroll-in ${isVisible ? 'visible' : ''} flex flex-col`}
     >
@@ -34,7 +34,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 export default Projects
