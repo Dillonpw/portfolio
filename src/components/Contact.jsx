@@ -27,7 +27,7 @@ const Contact = () => {
   }
 
   return (
-    <section
+    <div
       ref={ref}
       className={`scroll-in ${
         isVisible ? 'visible' : ''
@@ -67,7 +67,7 @@ const Contact = () => {
         </button>
       </form>
       <span className="text-center">{result}</span>
-    </section>
+    </div>
   )
 }
 

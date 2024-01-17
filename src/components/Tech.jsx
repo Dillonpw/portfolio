@@ -15,7 +15,7 @@ const Tech = () => {
   ]
 
   return (
-    <section
+    <div
       ref={ref}
       id="tech"
       className={`scroll-in ${
@@ -54,7 +54,7 @@ const Tech = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 
