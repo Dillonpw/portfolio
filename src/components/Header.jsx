@@ -67,8 +67,8 @@ const Header = () => {
           <h1 id="home" className="fade-in px-5 pb-2 text-5xl">
             Dillon Walsh
           </h1>
-          <h2 className="fade-in-2 px-5 pb-2 text-2xl opacity-60">
-            Full Stack Web Developer and Designer
+          <h2 className="fade-in-2 px-5 pb-2 text-3xl opacity-60">
+            Full Stack Web Developer
           </h2>
           <div
             id="links"
@@ -103,13 +103,16 @@ const Header = () => {
 
         <div className="fade-in-4 mt-40 flex w-full flex-col items-center px-6 md:w-1/2">
           <p className="px-6 text-xl opacity-60">
-            After graduating from College in 2019, I took a full time position
-            as a 911 emergency dispatcher. Though the job could be demanding, it
-            also provided me with the free time I needed to learn web
-            development using free resources like freeCodeCamp, The Odin Project
-            and official documentation. Lately, I've been busy contributing to
-            open source projects, building projects for myself and some things
-            for a some good people.
+            In 2019, after completing my college education, I embarked on a
+            career as a 911 emergency dispatcher. While this role was
+            challenging and demanding, it also afforded me the time to explore
+            my budding interest in web development. I utilized a range of free
+            resources, including freeCodeCamp, The Odin Project, and various
+            official documentation, to self-educate and hone my skills while
+            working a full time job. Recently, my focus has shifted towards
+            contributing to open source learning projects and their
+            documentation, and developing personal projects, as well as providing
+            web development services for some really great people.
           </p>
         </div>
       </div>
