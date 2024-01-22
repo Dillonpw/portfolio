@@ -14,7 +14,7 @@ const Projects = () => {
         Projects
       </h3>
 
-      <div className="m-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="m-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         {images.map((image) => (
           <div key={image.id} className="mb-4 flex flex-col items-center">
             <Link
@@ -23,7 +23,7 @@ const Projects = () => {
               to={`/projects/${image.id}`}
             >
               <img
-                className="aspect-auto h-[380px] w-[610px] rounded-2xl border-2 border-white"
+                className="h-[277px] w-[480px] rounded-2xl border-2 border-white"
                 src={image.src}
                 alt={image.title}
               />
