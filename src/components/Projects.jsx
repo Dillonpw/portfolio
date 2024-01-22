@@ -23,7 +23,7 @@ const Projects = () => {
               to={`/projects/${image.id}`}
             >
               <img
-                className="aspect-auto h-auto w-auto rounded-2xl border-2 border-white"
+                className="aspect-auto h-[380px] w-[610px] rounded-2xl border-2 border-white"
                 src={image.src}
                 alt={image.title}
               />
