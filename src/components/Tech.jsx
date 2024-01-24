@@ -10,6 +10,7 @@ const Tech = () => {
     'Svelte',
     'Python',
     'React Native',
+    'PostgreSQL',
     'MongoDB',
   ]
 
