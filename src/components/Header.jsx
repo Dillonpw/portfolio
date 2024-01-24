@@ -42,7 +42,7 @@ const Header = () => {
         <Link to="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </Link>
-        <div className="items-end justify-center px-2 text-xl">
+        <div className="items-end justify-center px-2 text-3xl">
           <a
             className="m-2 hover:underline"
             href="#about"
@@ -63,13 +63,18 @@ const Header = () => {
         </div>
       </div>
       <div className="mx-8 mt-10 flex flex-col items-center justify-center md:flex-row">
-        <div className=" flex w-full flex-col px-6 md:w-1/2">
+        <div className="mt-20 flex w-full flex-col gap-4 px-6 md:w-1/2">
           <h1 id="home" className="fade-in px-5 pb-2 text-5xl">
             Dillon Walsh
           </h1>
           <h2 className="fade-in-2 px-5 pb-2 text-3xl opacity-60">
             Full Stack Web Developer
           </h2>
+          <h3 className="fade-in-2 px-5 pb-2 text-xl opacity-60">
+            If I'm not online I'm probably walking my dogs, or reading a good
+            book.{' '}
+          </h3>
+
           <div
             id="links"
             className="fade-in-3 ml-1 px-5 pt-4 text-cyan-100 opacity-60"
@@ -101,7 +106,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="fade-in-4 mt-40 flex w-full flex-col items-center px-6 md:w-1/2">
+        <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
           <p className="px-6 text-xl opacity-60">
             In 2019, after completing my college education, I embarked on a
             career as a 911 emergency dispatcher. While this role was
@@ -111,8 +116,8 @@ const Header = () => {
             official documentation, to self-educate and hone my skills while
             working a full time job. Recently, my focus has shifted towards
             contributing to open source learning projects and their
-            documentation, and developing personal projects, as well as providing
-            web development services for some really great people.
+            documentation, and developing personal projects, as well as
+            providing web development services for some really great people.
           </p>
         </div>
       </div>

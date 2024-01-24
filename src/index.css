@@ -71,24 +71,24 @@ body {
 }
 
 .fade-in {
-  animation: fade-in 1s ease forwards;
+  animation: fade-in .5s ease forwards;
 }
 
 .fade-in-2 {
   visibility: hidden;
-  animation: fade-in 1s ease forwards;
-  animation-delay: 0.5s;
+  animation: fade-in .75s ease forwards;
+  animation-delay: 0.25s;
 }
 
 .fade-in-3 {
   visibility: hidden;
-  animation: fade-in 1s ease forwards;
-  animation-delay: 1s;
+  animation: fade-in .75s ease forwards;
+  animation-delay: .5s;
 }
 
 .fade-in-4 {
   visibility: hidden;
-  animation: fade-in 2s ease forwards;
+  animation: fade-in 1s ease forwards;
   animation-delay: 1s;
 }
 
