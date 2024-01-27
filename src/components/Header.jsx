@@ -50,15 +50,15 @@ const Header = () => {
           >
             About
           </a>
-          <a className="m-2 hover:underline" href="#tech" onClick={scrollTech}>
-            Tech
-          </a>
           <a
             className="m-2 hover:underline "
             href="#projects"
             onClick={scrollProjects}
           >
             Projects
+          </a>
+          <a className="m-2 hover:underline" href="#tech" onClick={scrollTech}>
+            Tech
           </a>
         </div>
       </nav>
@@ -71,8 +71,7 @@ const Header = () => {
             Full Stack Web Developer
           </h2>
           <h3 className="fade-in-2 px-5 pb-2 text-xl opacity-60">
-            If I'm not online I'm probably walking my dogs, or reading a good
-            book.
+            If I'm not online I'm probably walking my dogs
           </h3>
 
           <div
@@ -107,7 +106,7 @@ const Header = () => {
         </div>
 
         <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
-          <p className="px-6 text-xl opacity-60 mt-10">
+          <p className="mt-10 px-6 text-xl opacity-60">
             In 2019, after completing my college education, I embarked on a
             career as a 911 emergency dispatcher. While this role was
             challenging and demanding, it also afforded me the time to explore

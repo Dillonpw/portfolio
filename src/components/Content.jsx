@@ -24,8 +24,9 @@ const Content = () => {
         >
           &uarr;
         </button>
-        <Tech />
         <Projects />
+        <Tech />
+
         <Contact />
         <Footer />
         <Analytics />
