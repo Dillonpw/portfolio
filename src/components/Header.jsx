@@ -38,11 +38,11 @@ const Header = () => {
 
   return (
     <section>
-      <div className="mx-8 flex flex-row items-center justify-between p-6">
+      <nav className="mx-4 flex flex-row items-center justify-between p-6">
         <Link to="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </Link>
-        <div className="items-end justify-center px-2 text-3xl">
+        <div className="items-end justify-center px-2 text-2xl">
           <a
             className="m-2 hover:underline"
             href="#about"
@@ -61,7 +61,7 @@ const Header = () => {
             Projects
           </a>
         </div>
-      </div>
+      </nav>
       <div className="mx-8 mt-10 flex flex-col items-center justify-center md:flex-row">
         <div className="mt-20 flex w-full flex-col gap-4 px-6 md:w-1/2">
           <h1 id="home" className="fade-in px-5 pb-2 text-5xl">
@@ -72,7 +72,7 @@ const Header = () => {
           </h2>
           <h3 className="fade-in-2 px-5 pb-2 text-xl opacity-60">
             If I'm not online I'm probably walking my dogs, or reading a good
-            book.{' '}
+            book.
           </h3>
 
           <div
@@ -107,7 +107,7 @@ const Header = () => {
         </div>
 
         <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
-          <p className="px-6 text-xl opacity-60">
+          <p className="px-6 text-xl opacity-60 mt-10">
             In 2019, after completing my college education, I embarked on a
             career as a 911 emergency dispatcher. While this role was
             challenging and demanding, it also afforded me the time to explore
