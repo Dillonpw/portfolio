@@ -1,26 +1,26 @@
-import useScrollIn from './ScrollIn'
+import { motion } from 'framer-motion'
 
 const Tech = () => {
-  const [ref, isVisible] = useScrollIn()
-
-  const devTools = ['TypeScript','JavaScript', 'React', 'Tailwind CSS', 'Astro','Next', 'Express']
+  const devTools = [
+    'TypeScript',
+    'JavaScript',
+    'React',
+    'Tailwind CSS',
+    'Astro',
+    'Next',
+    'Express',
+  ]
   const otherTools = ['Git', 'VS Code', 'Vite', 'Figma']
 
-  const learning = [
-    'Svelte',
-    'Python',
-    'React Native',
-    'PostgreSQL',
-    'MongoDB',
-  ]
+  const learning = ['Svelte', 'Python', 'React Native', 'PostgreSQL', 'MongoDB']
 
   return (
-    <section
-      ref={ref}
+    <motion.section
+    initial={{ opacity:0 }}
+    transition={{duration:1}}
+    whileInView={{ opacity:1 }}
       id="tech"
-      className={`scroll-in ${
-        isVisible ? 'visible' : ''
-      } my-20 flex flex-col items-center justify-center rounded-md p-10 text-center md:my-40`}
+      className="mb-20 flex flex-col items-center justify-center rounded-md p-10 text-center md:mb-40"
     >
       <div className="grid w-full grid-cols-1 gap-x-10 gap-y-10 pt-10 text-xl sm:grid-cols-1 md:grid-cols-3">
         <div>
@@ -54,7 +54,7 @@ const Tech = () => {
           </ul>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

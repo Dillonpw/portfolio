@@ -1,16 +1,17 @@
 import { Link } from 'react-router-dom'
-import useScrollIn from './ScrollIn'
 import images from './Images'
+import { motion } from 'framer-motion'
 
 const Projects = () => {
-  const [ref, isVisible] = useScrollIn()
 
   return (
-    <section
-      ref={ref}
-      className={`scroll-in ${isVisible ? 'visible' : ''} flex flex-col`}
+    <motion.section initial={{ opacity:0 }}
+    transition={{duration:1}}
+    whileInView={{ opacity:1 }}
+
+      className='flex flex-col m-10'
     >
-      <h3 id="projects" className="mb-6 text-center text-4xl font-bold">
+      <h3 id="projects" className="my-20 text-center text-4xl font-bold">
         Selected Projects
       </h3>
 
@@ -44,7 +45,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   )
 }
 export default Projects
