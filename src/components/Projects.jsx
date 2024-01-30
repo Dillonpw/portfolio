@@ -9,11 +9,12 @@ const Projects = () => {
     transition={{duration:1}}
     whileInView={{ opacity:1 }}
 
-      className='flex flex-col m-10'
+      className='flex flex-col m-10 mt-40'
     >
       <h3 id="projects" className="my-20 text-center text-4xl font-bold">
         Selected Projects
       </h3>
+      <p className=' mb-6 text-center text-lg opacity-50'>Click on the images for more infomation about each listed project</p>
 
       <div className="m-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         {images.map((image) => (

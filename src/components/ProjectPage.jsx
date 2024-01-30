@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import images from './Images'
-import useScrollIn from './ScrollIn'
+import { motion } from 'framer-motion'
 import logo from '/assets/logo.svg'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
@@ -16,7 +16,6 @@ const ProjectPage = () => {
 
   const renderContent = () => {
     const project = images.find((image) => image.id === projectId)
-    const [ref, isVisible] = useScrollIn()
 
     switch (projectId) {
       case 'cv-template':
@@ -24,7 +23,11 @@ const ProjectPage = () => {
       case 'slicing':
       case 'ecommerce-site':
         return (
-          <main ref={ref} className={`scroll-in ${isVisible ? 'visible' : ''}`}>
+          <motion.main
+            initial={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1 }}
+          >
             <div className="pb-15 mx-8 flex flex-row items-center justify-between p-4 pt-6">
               <Link to="/" id="logo" className="justify-start px-2">
                 <img className="hover:scale-105" src={logo} alt="Logo" />
@@ -82,7 +85,7 @@ const ProjectPage = () => {
                 {project.challenge}
               </p>
             </section>
-          </main>
+          </motion.main>
         )
 
       default:

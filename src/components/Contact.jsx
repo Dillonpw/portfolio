@@ -1,10 +1,9 @@
-import useScrollIn from './ScrollIn'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   const [result, setResult] = useState('')
   const [isEmailSubmitted, setIsEmailSubmitted] = useState(false)
-  const [ref, isVisible] = useScrollIn()
 
   const onSubmit = async (event) => {
     event.preventDefault()
@@ -34,11 +33,11 @@ const Contact = () => {
       <h1 className="text-3xl">Thank you for reaching out!</h1>
     </div>
   ) : (
-    <aside
-      ref={ref}
-      className={`scroll-in ${
-        isVisible ? 'visible' : ''
-      } m-8 border-cyan-200 md:max-w-[700px]`}
+    <motion.aside
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1 }}
+      className="m-8 border-cyan-200 md:max-w-[700px]"
     >
       <h1 className="text-center text-3xl">Want to get in touch?</h1>
       <form className="flex flex-col" onSubmit={onSubmit}>
@@ -74,7 +73,7 @@ const Contact = () => {
         </button>
       </form>
       <span className="text-center">{result}</span>
-    </aside>
+    </motion.aside>
   )
 }
 
