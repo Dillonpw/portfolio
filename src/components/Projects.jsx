@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom'
 import images from './Images'
 import { motion } from 'framer-motion'
+import Contact from './Contact.jsx'
 
 const Projects = () => {
-
   return (
-    <motion.section initial={{ opacity:0 }}
-    transition={{duration:1}}
-    whileInView={{ opacity:1 }}
-
-      className='flex flex-col m-10 mt-40'
+    <motion.section
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1 }}
+      className="m-10 mt-40 flex flex-col"
     >
       <h3 id="projects" className="my-20 text-center text-4xl font-bold">
         Selected Projects
       </h3>
-      <p className=' mb-6 text-center text-lg opacity-50'>Click on the images for more infomation about each listed project</p>
+      <p className=" mb-6 text-center text-lg opacity-50">
+        Click on the images for more infomation about each listed project
+      </p>
 
       <div className="m-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
         {images.map((image) => (
@@ -30,7 +32,7 @@ const Projects = () => {
                 alt={image.title}
               />
             </Link>
-            <div className="mt-8 flex flex-wrap justify-center items-center ">
+            <div className="mt-8 flex flex-wrap items-center justify-center ">
               {image.tags.map((tag) => (
                 <span
                   key={tag}
@@ -42,9 +44,20 @@ const Projects = () => {
             </div>
             <div className="p-4 text-lg opacity-50">
               <p>{image.description}</p>
-            </div>
+            </div>{' '}
           </div>
         ))}
+      </div>
+      <div className="pt-10">
+        <p className="m-2 text-center text-4xl font-bold">There's More!</p>
+        <p className="m-2 text-center text-xl">
+          I have several more projects; some private, some under construction
+          that I am happy to show and discuss.
+        </p>
+        <p className="m-4 text-center text-xl">
+          If you're interested feel free to send me a message!
+        </p>
+        <Contact />
       </div>
     </motion.section>
   )

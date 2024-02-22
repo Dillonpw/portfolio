@@ -24,8 +24,33 @@ const images = [
     challenge:
       ' I originally built this project using vanilla JavaScript, and after deciding to build the project up a bit I wanted to challenge myself and covert it to typeScript for some practice. This was the first project I built using TypeScript and I struggled a bit at first with typing things correctly and sometimes skipped types but as I moved through the documentation things becmae clear and the error responses turned into a tool as I converted the code.',
     description:
-      "A live and public site with returning users, styled with a brutaslist theme in mind. Consisting of a few useful tools for 911 dispatchers, a job I worked for several years. I built the app to help with my efficiency as a dispatcher and as a send off gift to my former coworkers. The primary funciton is a work schedule generator. As a 911 dispatcher, my schedule was different every week due to the need for 24/7 uptime, and to prevent the same poeple from always working weekends we worked on a rotation of 4 work days followed by 3 days off, which required a great deal of effort to schedule anything in advance. I plan to add more tools to the page as they come to mind and offer this project up to other 911 dispatchers to hopefully make their jobs and lives easier as well.",
+      'A live and public site with returning users, styled with a brutaslist theme in mind. Consisting of a few useful tools for 911 dispatchers, a job I worked for several years. I built the app to help with my efficiency as a dispatcher and as a send off gift to my former coworkers. The primary funciton is a work schedule generator. As a 911 dispatcher, my schedule was different every week due to the need for 24/7 uptime, and to prevent the same poeple from always working weekends we worked on a rotation of 4 work days followed by 3 days off, which required a great deal of effort to schedule anything in advance. I plan to add more tools to the page as they come to mind and offer this project up to other 911 dispatchers to hopefully make their jobs and lives easier as well.',
   },
+  /* to be replaced
+  {
+    id: '',
+    src: '',
+    mobileImg: '',
+    livePreviewLink: '',
+    githubLink: '',
+    title: '',
+    tags: [],
+    challenge: '',
+    description: '',
+  },
+
+  {
+    id: '',
+    src: '',
+    mobileImg: '',
+    livePreviewLink: '',
+    githubLink: '',
+    title: '',
+    tags: [],
+    challenge: '',
+    description: '',
+  }
+
 
 
 
@@ -57,7 +82,7 @@ const images = [
       'I had trouble properly displaying the background SVG files for this project for a while, but after some research online I was able to get them functioning to my liking, building the Toggle switch was also a challenge and It took a lot more CSS than i was hoping it would to build; once again I found I was far from the first person to run into theses issues and was able to apply solutions I may not have come up with myself.',
     description:
       'a collection of several Frontend Mentor projects to display design to product slicing, the fist example here is a simple pricing component to be applied to a landing page. In theory the buttons would redirect to more infomation but this is a standalone page. There is a toggle switch to display either annual cost plans or monthyly plans. The page is responsive, adjusting its shape for small screens.',
-  },
+  }, */
 ]
 
 export default images

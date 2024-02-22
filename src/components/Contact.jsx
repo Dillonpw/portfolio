@@ -39,7 +39,6 @@ const Contact = () => {
       whileInView={{ opacity: 1 }}
       className="m-8 border-cyan-200 md:max-w-[700px]"
     >
-      <h1 className="text-center text-3xl">Want to get in touch?</h1>
       <form className="flex flex-col" onSubmit={onSubmit}>
         <label className="font-bold" htmlFor="email">
           Email:
