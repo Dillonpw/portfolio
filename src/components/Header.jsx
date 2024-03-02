@@ -124,6 +124,7 @@ const Header = () => {
             documentation, and developing personal projects, as well as
             providing web development services for some really great people.
           </p>
+          <a className='px-6 py-4 bg-cyan-200 rounded-xl border-2 border-cyan-200 text-slate-800  hover:bg-slate-800 hover:text-cyan-200' href="/about">More</a>
         </div>
       </motion.div>
     </section>

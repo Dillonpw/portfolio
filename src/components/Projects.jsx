@@ -3,6 +3,7 @@ import images from './Images'
 import { motion } from 'framer-motion'
 import Contact from './Contact.jsx'
 
+
 const Projects = () => {
   return (
     <motion.section
@@ -48,16 +49,17 @@ const Projects = () => {
           </div>
         ))}
       </div>
-      <div className="pt-10">
-        <p className="m-2 text-center text-4xl font-bold">There's More!</p>
-        <p className="m-2 text-center text-xl">
-          I have several more projects; some private, some under construction
+      <div className="flex flex-col pt-10">
+        <p className="m-4 text-center text-4xl font-bold">There's More!</p>
+        <p className="mx-4 text-left text-xl">
+          I have several more projects; some private and some under construction
           that I am happy to show and discuss.
         </p>
-        <p className="m-4 text-center text-xl">
-          If you're interested feel free to send me a message!
+        <p className="mx-4 text-left text-xl">
+          If you're interested feel free to send me a message or just visit my profile on
+          <a href='https://github.com/Dillonpw' target="_blank" rel="noreferrer" className=" ml-2 underline">Github!</a>
         </p>
-        <Contact />
+        <Contact/>
       </div>
     </motion.section>
   )
