@@ -43,7 +43,7 @@ const Header = () => {
         <Link to="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </Link>
-        <div className="items-end justify-center px-2 text-2xl">
+        <div className="justify-center px-2 text-2xl">
           <a
             className="m-2 hover:underline"
             href="#about"
@@ -67,9 +67,9 @@ const Header = () => {
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1 }}
-        className="mx-8 mt-10 flex flex-col items-center justify-center md:flex-row"
+        className="mx-8 mt-10 flex flex-col items-center justify-center lg:flex-row"
       >
-        <div className="mt-20 flex w-full flex-col gap-4 px-6 md:w-1/2">
+        <div className="flex w-full flex-col gap-4 px-6 md:w-1/2">
           <h1 id="home" className=" px-5 pb-2 text-5xl">
             Dillon Walsh
           </h1>
@@ -112,7 +112,7 @@ const Header = () => {
         </div>
 
         <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
-          <p className="my-10 px-6 text-xl opacity-60">
+          <p className="my-20 px-6 text-xl opacity-60">
             In 2019, after completing my college education, I embarked on a
             career as a 911 emergency dispatcher. While this role was
             challenging and demanding, it also afforded me the time to explore

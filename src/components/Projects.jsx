@@ -51,13 +51,12 @@ const Projects = () => {
       </div>
       <div className="flex flex-col pt-10">
         <p className="m-4 text-center text-4xl font-bold">There's More!</p>
-        <p className="mx-4 text-left text-xl">
-          I have several more projects; some private and some under construction
-          that I am happy to show and discuss.
+        <p className="mx-8 text-left text-xl">
+          I have several more projects in the works that I am happy to show and discuss including a professional hair dresser's portfolio and a small business's website still in the planning phase.
         </p>
-        <p className="mx-4 text-left text-xl">
-          If you're interested feel free to send me a message or just visit my profile on
-          <a href='https://github.com/Dillonpw' target="_blank" rel="noreferrer" className=" ml-2 underline">Github!</a>
+        <p className="m-8 text-left text-xl">
+          If you're interested feel free to send me a message about the private projects, or just visit my profile on
+          <a href='https://github.com/Dillonpw' target="_blank" rel="noreferrer" className=" ml-2 underline">Github</a> for everything else!
         </p>
         <Contact/>
       </div>

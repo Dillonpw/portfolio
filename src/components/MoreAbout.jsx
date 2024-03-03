@@ -8,6 +8,8 @@ const About = () => {
         <img className="hover:scale-105" src={logo} alt="Logo" />
       </Link>
       <h1>This page is under construction... wait how did you get here?</h1>
+      {/* add an image of me--
+      add a some discusison of how I began to grow interest in programming, growing up, current interests, pictures of the pets*/}
     </main>
   )
 }
