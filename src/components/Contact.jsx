@@ -65,7 +65,7 @@ const Contact = () => {
         ></textarea>
 
         <button
-          className="w-fit items-center justify-center rounded-lg bg-cyan-200 px-8 py-4 text-sky-950 opacity-90 hover:scale-105 hover:opacity-100"
+          className="w-fit items-center justify-center rounded-lg bg-slate-900 text-emerald-400 dark:bg-cyan-200 px-8 py-4 dark:text-sky-950 opacity-90 hover:scale-105 hover:opacity-100"
           type="submit"
         >
           Submit

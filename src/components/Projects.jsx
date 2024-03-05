@@ -54,7 +54,7 @@ const Projects = () => {
         <p className="mx-8 text-left text-xl">
           I have several more projects in the works that I am happy to show and discuss including a professional hair dresser's portfolio and a small business's website still in the planning phase.
         </p>
-        <p className="m-8 text-left text-xl">
+        <p className="mx-8 text-left text-xl">
           If you're interested feel free to send me a message about the private projects, or just visit my profile on
           <a href='https://github.com/Dillonpw' target="_blank" rel="noreferrer" className=" ml-2 underline">Github</a> for everything else!
         </p>

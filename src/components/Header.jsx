@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import ThemeToggle from './theme.jsx'
 import { motion } from 'framer-motion'
 import logo from '/assets/logo.svg'
 
@@ -62,6 +63,8 @@ const Header = () => {
             Tech
           </a>
         </div>
+
+        <ThemeToggle />
       </nav>
       <motion.div
         initial={{ opacity: 0 }}
@@ -82,7 +85,7 @@ const Header = () => {
 
           <div
             id="links"
-            className="fade-in-3 ml-1 px-5 pt-4 text-cyan-100 opacity-60"
+            className="fade-in-3 ml-1 px-5 pt-4 text-slate-900 dark:text-cyan-100 opacity-60"
           >
             <a
               id="githubLink"
@@ -125,7 +128,6 @@ const Header = () => {
             providing web development services for some really great people.
           </p>
           {/* <a className="px-6 py-4 bg-cyan-200 rounded-xl border-2 border-cyan-200 text-slate-800  hover:bg-slate-800 hover:text-cyan-200" href="/about">More</a> */}
-   
         </div>
       </motion.div>
     </section>
