@@ -17,7 +17,7 @@ const ThemeToggle = () => {
   };
 
   return (
-    <button className='text-3xl font-bold' onClick={toggleTheme}>
+    <button className='text-2xl font-bold' onClick={toggleTheme}>
       {darkMode ? '☼' : '☾'}
     </button>
   );

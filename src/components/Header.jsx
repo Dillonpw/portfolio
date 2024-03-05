@@ -44,7 +44,7 @@ const Header = () => {
         <Link to="/" id="logo" className="justify-start px-2">
           <img className="hover:scale-105" src={logo} alt="Logo" />
         </Link>
-        <div className="justify-center px-2 text-2xl">
+        <div className="justify-center px-2 text-xl">
           <a
             className="m-2 hover:underline"
             href="#about"
