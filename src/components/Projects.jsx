@@ -37,7 +37,7 @@ const Projects = () => {
               {image.tags.map((tag) => (
                 <span
                   key={tag}
-                  className="m-2 cursor-default rounded-2xl border-2 border-slate-800 bg-cyan-200 px-3 py-2 text-slate-800 hover:border-2 hover:border-cyan-200 hover:bg-slate-800 hover:text-cyan-200"
+                  className="m-2 cursor-default rounded-2xl border-2  dark:bg-cyan-200 px-3 py-2 dark:text-slate-800 hover:border-2 border-cyan-200 bg-slate-800 text-cyan-200"
                 >
                   {tag}
                 </span>
