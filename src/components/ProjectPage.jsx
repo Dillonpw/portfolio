@@ -4,6 +4,7 @@ import images from './Images'
 import ThemeToggle from './theme'
 import { motion } from 'framer-motion'
 import logo from '/assets/logo.svg'
+import Footer from './Footer'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -86,6 +87,7 @@ const ProjectPage = () => {
                 {project.challenge}
               </p>
             </section>
+            <Footer />
           </motion.main>
         )
 
