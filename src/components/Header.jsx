@@ -1,71 +1,12 @@
-import { Link } from 'react-router-dom'
+import NavBar from './nav.jsx'
 import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import ThemeToggle from './theme.jsx'
 import { motion } from 'framer-motion'
-import logo from '/assets/logo.svg'
 
 const Header = () => {
-  const scrollAbout = () => {
-    window.scrollTo({
-      top: 90,
-      behavior: 'smooth',
-    })
-  }
-
-  const scrollTech = (e) => {
-    e.preventDefault()
-    const techElement = document.getElementById('tech')
-    if (techElement) {
-      const techPos = techElement.offsetTop
-      window.scrollTo({
-        top: techPos,
-        behavior: 'smooth',
-      })
-    }
-  }
-
-  const scrollProjects = (e) => {
-    e.preventDefault()
-    const projectElement = document.getElementById('projects')
-    if (projectElement) {
-      const projectPos =
-        projectElement.getBoundingClientRect().top + window.scrollY
-      window.scrollTo({
-        top: projectPos,
-        behavior: 'smooth',
-      })
-    }
-  }
-
   return (
     <section>
-      <nav className="mx-4 flex flex-row items-center justify-between p-6">
-        <Link to="/" id="logo" className="justify-start px-2">
-          <img className="hover:scale-105" src={logo} alt="Logo" />
-        </Link>
-        <div className="justify-center px-2 text-xl">
-          <a
-            className="m-2 hover:underline"
-            href="#about"
-            onClick={scrollAbout}
-          >
-            About
-          </a>
-          <a
-            className="m-2 hover:underline "
-            href="#projects"
-            onClick={scrollProjects}
-          >
-            Projects
-          </a>
-          <a className="m-2 hover:underline" href="#tech" onClick={scrollTech}>
-            Tech
-          </a>
-        </div>
-
-        <ThemeToggle />
-      </nav>
+      <NavBar />
       <motion.div
         initial={{ opacity: 0 }}
         transition={{ duration: 1 }}
@@ -85,7 +26,7 @@ const Header = () => {
 
           <div
             id="links"
-            className="fade-in-3 ml-1 px-5 pt-4 text-slate-900 dark:text-cyan-100 opacity-60"
+            className="fade-in-3 ml-1 px-5 pt-4 text-slate-900 opacity-60 dark:text-cyan-100"
           >
             <a
               id="githubLink"
@@ -115,7 +56,7 @@ const Header = () => {
         </div>
 
         <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
-          <p className="my-20 px-6 text-xl opacity-60">
+          <p className="mb-5 mt-20 px-6 text-xl opacity-60">
             In 2019, after completing my college education, I embarked on a
             career as a 911 emergency dispatcher. While this role was
             challenging and demanding, it also afforded me the time to explore
@@ -127,7 +68,12 @@ const Header = () => {
             documentation, and developing personal projects, as well as
             providing web development services for some really great people.
           </p>
-          {/* <a className="px-6 py-4 bg-cyan-200 rounded-xl border-2 border-cyan-200 text-slate-800  hover:bg-slate-800 hover:text-cyan-200" href="/about">More</a> */}
+          {/*<a
+            className="rounded-xl bg-slate-900 px-6 py-4 text-emerald-400 opacity-90 hover:scale-105 dark:bg-cyan-200 dark:text-sky-950"
+            href="/about"
+          >
+            More
+  </a> */}
         </div>
       </motion.div>
     </section>

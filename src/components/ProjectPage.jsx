@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import images from './Images'
+import ThemeToggle from './theme'
 import { motion } from 'framer-motion'
 import logo from '/assets/logo.svg'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -18,12 +19,11 @@ const ProjectPage = () => {
     const project = images.find((image) => image.id === projectId)
 
     switch (projectId) {
-      case 'cv-template':
       case 'dispatcher-cheat-sheet':
-      case 'slicing':
       case 'ecommerce-site':
         return (
           <motion.main
+            className="bg-gradient-to-br from-gray-300 to-emerald-400 text-slate-900 dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200"
             initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1 }}
@@ -32,6 +32,7 @@ const ProjectPage = () => {
               <Link to="/" id="logo" className="justify-start px-2">
                 <img className="hover:scale-105" src={logo} alt="Logo" />
               </Link>
+              <ThemeToggle />
             </div>
 
             <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
