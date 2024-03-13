@@ -14,7 +14,7 @@ const Header = () => {
         className="mx-8 mt-10 flex flex-col items-center justify-center lg:flex-row"
       >
         <div className="flex w-full flex-col gap-4 px-6 md:w-1/2">
-          <h1 id="home" className=" px-5 py-6 text-5xl">
+          <h1 id="home" className=" px-5 py-10 text-5xl">
             Dillon Walsh
           </h1>
           <h2 className="fade-in-2 px-5 pb-2 text-3xl opacity-60">
