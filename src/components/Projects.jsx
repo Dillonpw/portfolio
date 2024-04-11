@@ -8,7 +8,7 @@ const Projects = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      transition={{ duration: 1 }}
+      transition={{ duration: 6 }}
       whileInView={{ opacity: 1 }}
       className="m-10 mt-40 flex flex-col"
     >

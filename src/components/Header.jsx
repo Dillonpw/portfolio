@@ -9,7 +9,7 @@ const Header = () => {
       <NavBar />
       <motion.div
         initial={{ opacity: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 6 }}
         whileInView={{ opacity: 1 }}
         className="mx-8 mt-10 flex flex-col items-center justify-center lg:flex-row"
       >
