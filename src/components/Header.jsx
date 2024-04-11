@@ -56,17 +56,18 @@ const Header = () => {
         </div>
 
         <div className="fade-in-4 mt-30 flex w-full flex-col items-center px-6 md:w-1/2">
-          <p className="mb-5 mt-20 px-6 text-xl opacity-60">
-            In 2019, after completing my college education, I embarked on a
-            career as a 911 emergency dispatcher. While this role was
-            challenging and demanding, it also afforded me the time to explore
-            my budding interest in web development. I utilized a range of free
-            resources, including freeCodeCamp, The Odin Project, and various
-            official documentation, to self-educate and hone my skills while
-            working a full time job. Recently, my focus has shifted towards
-            contributing to open source learning projects and their
-            documentation, and developing personal projects, as well as
-            providing web development services for some really great people.
+          <p className="mb-5 mt-20 px-6 pt-10 text-xl opacity-60">
+            In 2019, after completing my college education, I took on a position
+            as a 911 emergency dispatcher. While this role was challenging, it
+            also afforded me the time to explore my budding interest in web
+            development. Relying entirely on free resources, including
+            freeCodeCamp, The Odin Project, and official documentation, to hone
+            my skills while working a full time job. Recently, my focus has
+            shifted towards contributing to open source learning projects and
+            their documentation, and developing personal projects, as well as
+            providing web development services for some really great people. If
+            you visit my Github you may notice I've been diving into Mobile
+            development and having a blast!
           </p>
           {/*<a
             className="rounded-xl bg-slate-900 px-6 py-4 text-emerald-400 opacity-90 hover:scale-105 dark:bg-cyan-200 dark:text-sky-950"
