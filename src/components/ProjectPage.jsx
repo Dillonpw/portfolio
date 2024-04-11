@@ -22,6 +22,7 @@ const ProjectPage = () => {
     switch (projectId) {
       case 'dispatcher-cheat-sheet':
       case 'ecommerce-site':
+      case 'pomodoro-timer-app':
         return (
           <motion.main
             className="bg-gradient-to-br from-gray-300 to-emerald-400 text-slate-900 dark:bg-gradient-to-br dark:from-sky-950 dark:to-slate-900 dark:text-cyan-200"
@@ -35,18 +36,19 @@ const ProjectPage = () => {
               </Link>
               <ThemeToggle />
             </div>
-
             <div className="flex flex-col items-center justify-center px-4 xl:flex-row">
               <img
                 className="w-100 m-2 h-auto items-center justify-center rounded-2xl"
                 src={project.src}
                 alt={project.title}
               />
-              <img
-                className="h-100 w-auto items-center justify-center rounded-2xl"
-                src={project.mobileImg}
-                alt={project.title}
-              />
+              {project.mobileImg && (
+                <img
+                  className="h-100 w-auto items-center justify-center rounded-2xl"
+                  src={project.mobileImg}
+                  alt={project.title}
+                />
+              )}
             </div>
             <div className=" mt-4 flex  justify-center pb-6">
               <a
@@ -61,19 +63,21 @@ const ProjectPage = () => {
                   icon={faGithub}
                 />
               </a>
-              <a
-                className="mx-4 h-8 w-8 hover:scale-110"
-                id={`live preview link ${projectId}`}
-                href={project.livePreviewLink}
-                target="_blank"
-                rel="noreferrer"
-                aria-label="redirect to live preview"
-              >
-                <FontAwesomeIcon
-                  className="h-8 w-8 hover:scale-110"
-                  icon={faUpRightFromSquare}
-                />
-              </a>
+              {project.livePreviewLink && (
+                <a
+                  className="mx-4 h-8 w-8 hover:scale-110"
+                  id={`live preview link ${projectId}`}
+                  href={project.livePreviewLink}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="redirect to live preview"
+                >
+                  <FontAwesomeIcon
+                    className="h-8 w-8 hover:scale-110"
+                    icon={faUpRightFromSquare}
+                  />
+                </a>
+              )}
             </div>
             <section className="ml-4 flex flex-col items-center justify-center">
               <h2 className="m-4 text-3xl font-bold">{project.title}</h2>

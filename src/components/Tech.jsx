@@ -5,22 +5,31 @@ const Tech = () => {
     'TypeScript',
     'JavaScript',
     'React',
-    'Svelte',
+    'React Native',
     'Node',
     'Tailwind CSS',
     'Astro',
     'Next',
     'Express',
   ]
-  const otherTools = ['Git', 'VS Code', 'Vite', 'Figma', 'GitHub', 'Vercel', ]
+  const otherTools = [
+    'Git',
+    'VS Code',
+    'Vite',
+    'Figma',
+    'GitHub',
+    'Vercel',
+    'Expo',
+    'Tauri',
+  ]
 
-  const learning = ['Python', 'React Native', 'PostgreSQL', 'MongoDB']
+  const learning = ['Python', 'PostgreSQL', 'MongoDB', 'Svelte', 'Flutter']
 
   return (
     <motion.section
-    initial={{ opacity:0 }}
-    transition={{duration:1}}
-    whileInView={{ opacity:1 }}
+      initial={{ opacity: 0 }}
+      transition={{ duration: 1 }}
+      whileInView={{ opacity: 1 }}
       id="tech"
       className="mb-20 flex flex-col items-center justify-center rounded-md p-10 text-center md:mb-40"
     >
