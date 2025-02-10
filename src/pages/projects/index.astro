@@ -1,0 +1,13 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import ProjectList from "@/components/projects";
+import MoreProjects from "@/components/more-projects";
+
+---
+
+<Layout>
+  <ProjectList client:load />
+  <div class="flex items-center justify-center mt-8 hover:scale-110">
+    <MoreProjects />
+  </div>
+</Layout>

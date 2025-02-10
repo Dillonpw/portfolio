@@ -1,7 +1,6 @@
-"use client";
 import { useState, useEffect } from "react";
 import * as motion from "motion/react-client";
-import { ModeToggle } from "./ModeToggle"
+import { ModeToggle } from "./mode-toggle"
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
