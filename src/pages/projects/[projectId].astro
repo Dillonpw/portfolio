@@ -1,0 +1,119 @@
+---
+import Layout from "../../layouts/Layout.astro";
+export const prerender = false;
+import { descriptions } from "constants.ts";
+
+const { projectId } = Astro.params;
+
+const project = descriptions.find(
+  (description) => description.id === projectId,
+);
+
+if (!project) {
+  return new Response("Not Found", { status: 404, statusText: "Not Found" });
+}
+---
+<Layout pageTitle={project.title}>
+<main>
+  <div class="flex flex-col items-center justify-center px-4 pt-40 xl:px-20">
+    {
+      project.video && (
+        <video
+          src={project.video}
+          class="items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
+          muted
+          autoplay
+          loop
+        />
+      )
+    }
+    <img
+      class="w-100 m-2 h-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
+      src={project.src}
+      alt={project.title}
+      width={1000}
+      height={300}
+    />
+
+    {
+      project.src2 && (
+        <img
+          class="w-100 m-2 h-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
+          src={project.src2}
+          alt={project.title}
+          width={1000}
+          height={300}
+        />
+      )
+    }
+    {
+      project.mobileImg && (
+        <img
+          class="h-100 w-auto items-center justify-center rounded-lg border-2 border-black bg-slate-700 dark:border-white"
+          src={project.mobileImg}
+          alt={project.title}
+          width={375}
+          height={500}
+        />
+      )
+    }
+  </div>
+
+  <div class="mt-8 flex flex-wrap items-center justify-center">
+    {
+      project.tags.map((tag) => (
+        <span class="m-2 cursor-default rounded-2xl border-2 bg-neutral-950 px-3 py-2 text-gray-200 dark:bg-gray-200 dark:text-neutral-950">
+          {tag}
+        </span>
+      ))
+    }
+  </div>
+
+  <div class="mt-4 flex justify-center pb-6">
+    <a
+      id={`github link ${projectId}`}
+      href={project.githubLink}
+      target="_blank"
+      rel="noreferrer"
+      aria-label="redirect to Github"
+    >
+      <span class="h-8 w-8">GitHub</span>
+      {/* Replace with an icon if needed */}
+    </a>
+
+    {
+      project.livePreviewLink && (
+        <a
+          id={`live preview link ${projectId}`}
+          href={project.livePreviewLink}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="redirect to live preview"
+        >
+          <span class="h-8 w-8">Live Preview</span>{" "}
+          {/* Replace with an icon if needed */}
+        </a>
+      )
+    }
+  </div>
+
+  <section class="ml-4 flex flex-col items-center justify-center">
+    <div>
+      <h3 class="mt-8 text-center text-xl font-bold">About This Project</h3>
+      <p
+        class="max-w-100 xs:px-8 text-left text-lg opacity-60 sm:px-12 md:px-40"
+      >
+        {project.about}
+      </p>
+    </div>
+    <div>
+      <h3 class="mt-8 text-center text-xl font-bold">Challenges</h3>
+      <p
+        class="max-w-100 xs:px-8 mb-10 text-left text-lg opacity-60 sm:px-12 md:px-40"
+      >
+        {project.challenge}
+      </p>
+    </div>
+  </section>
+</main>
+</Layout>

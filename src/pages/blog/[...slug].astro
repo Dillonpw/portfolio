@@ -1,25 +1,21 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
-import PostLayout from '../../layouts/PostLayout.astro';
+import { getCollection, type CollectionEntry, render } from "astro:content";
+import PostLayout from "../../layouts/PostLayout.astro";
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
-  return posts.map(post => ({
-    params: { slug: post.id }, // Use post.id for routing
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.id },
     props: { post },
   }));
 }
 
 type Props = {
-  post: CollectionEntry<'blog'>;
+  post: CollectionEntry<"blog">;
 };
 
 const { post } = Astro.props;
-
-// Since 'render' is not available, we'll need to use the 'body' property
-// Note: This might not parse Markdown. You may need a Markdown parser.
-const content = post.body;
+const { Content } = await render(post);
 ---
-<PostLayout frontmatter={post.data}>
-  <div set:html={content} />
-</PostLayout>
+
+<PostLayout frontmatter={post.data}> <Content /></PostLayout>
