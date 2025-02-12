@@ -1,25 +1,26 @@
-interface MarqueeProps {
-  items: string[];
-}
-export const demoItems = ["lorem", "Ipsum", "Dolor", "Sit", "Amet"];
-
-export default function Marquee({ items }: MarqueeProps) {
+const Scroll = () => {
   return (
     <div className="my-4 flex overflow-hidden rounded-xl border-4 px-10">
-      <div className="animate-marquee flex min-w-full justify-around">
-        {items.map((item, index) => (
-          <span key={index} className="mx-4 text-lg">
-            {item}
-          </span>
-        ))}
+      <div className="flex min-w-full animate-marquee justify-around">
+        {["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur"].map(
+          (text, index) => (
+            <div key={index}>
+              <p>{text}</p>
+            </div>
+          ),
+        )}
       </div>
-      <div className="animate-marquee flex min-w-full justify-around">
-        {items.map((item, index) => (
-          <span key={index} className="mx-4 text-lg">
-            {item}
-          </span>
-        ))}
+      <div className="flex min-w-full animate-marquee justify-around">
+        {["Lorem", "Ipsum", "Dolor", "Sit", "Amet", "Consectetur"].map(
+          (text, index) => (
+            <div key={index}>
+              <p>{text}</p>
+            </div>
+          ),
+        )}
       </div>
     </div>
   );
-}
+};
+
+export default Scroll;
