@@ -12,7 +12,7 @@ const Footer = () => {
       >
         <p className="mx-6">
           Built using <b className="text-emerald-500">React</b>,{" "}
-          <b className="text-emerald-500">Next.JS</b> and{" "}
+          <b className="text-emerald-500">Astro</b> and{" "}
           <b className="text-emerald-500">Tailwind</b>, with some elements
           designed in <b className="text-emerald-500">Figma</b>
           <br />

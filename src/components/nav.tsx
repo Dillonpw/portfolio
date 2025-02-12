@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import * as motion from "motion/react-client";
 import { ModeToggle } from "./mode-toggle"
+import { Linkedin, Twitter, Github } from "lucide-react";
+import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@radix-ui/react-tooltip"
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,7 +46,61 @@ const Nav = () => {
             loading="eager"
           />
         </a>
+        <div className="flex space-x-4">
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  id="xLink"
+                  href="https://x.com/dillonpw_"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Twitter/X"
+                  className="block p-2 transition-transform hover:scale-110"
+                >
+                  <Twitter />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>Twitter/X</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
 
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  id="githubLink"
+                  href="https://github.com/Dillonpw/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  className="block p-2 transition-transform hover:scale-110"
+                >
+                  <Github />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>GitHub</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+          <TooltipProvider>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <a
+                  id="linkedinLink"
+                  href="https://www.linkedin.com/in/dillon-walsh-50673b290/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="block p-2 transition-transform hover:scale-110"
+                >
+                  <Linkedin />
+                </a>
+              </TooltipTrigger>
+              <TooltipContent>LinkedIn</TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        </div>
         <ModeToggle />
       </header>
     </motion.nav>

@@ -11,7 +11,7 @@ const Tech = () => {
       animate={{ y: 0 }}
       className="mt-20 cursor-pointer text-center md:mb-6"
     >
-      <h2 className="mb-4 text-xl font-bold lg:text-2xl">Working with</h2>
+      <h2 className="mb-4 text-2xl md:text-3xl">Working with</h2>
       <div className="relative hidden md:block">
         <div className="relative flex overflow-hidden">
           {[0, 1].map((row) => (
@@ -40,7 +40,7 @@ const Tech = () => {
         <ul className="flex flex-wrap items-center justify-center gap-3 px-4">
           {devTools.map((dt) => (
             <motion.li
-              className="opacity-60"
+              className="text-sm opacity-60 md:text-lg"
               key={dt}
               whileHover={{ scale: 1.4 }}
               transition={{ type: "spring", stiffness: 300 }}

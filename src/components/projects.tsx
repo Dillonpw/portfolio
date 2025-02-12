@@ -3,7 +3,7 @@ import * as motion from "motion/react-client";
 
 export default function ProjectList() {
   return (
-    <div className="mt-8 px-4 sm:px-6 md:mt-32 lg:px-8">
+    <div className="mt-10 px-4 sm:px-6 md:mt-32 lg:px-8">
       <motion.p
         initial={{ opacity: 0, x: -30 }}
         transition={{ duration: 1 }}
@@ -22,13 +22,16 @@ export default function ProjectList() {
       >
         <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
           {descriptions.slice(0, 5).map((descriptions: any) => (
-            <div key={descriptions.id} className="mb-6 flex flex-col items-center">
+            <div
+              key={descriptions.id}
+              className="mb-6 flex flex-col items-center"
+            >
               <a
                 aria-label={`More info about ${descriptions.title}`}
-                className="block w-full overflow-hidden rounded-xl border-2 border-black transition-all dark:border-white"
+                className="block w-full overflow-hidden rounded-xl border-2 transition-all"
                 href={`/projects/${descriptions.id}`}
               >
-                <div className="relative aspect-video w-full overflow-hidden">
+                <div className="relative overflow-hidden">
                   <img
                     className="rounded-lg transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-60"
                     src={descriptions.src}
@@ -51,7 +54,7 @@ export default function ProjectList() {
                   </motion.span>
                 ))}
               </div>
-              <div className="p-2 text-sm opacity-60 md:p-4 md:text-base">
+              <div className="p-2 text-sm opacity-60 md:p-4 md:text-lg">
                 <p>{descriptions.about}</p>
               </div>
             </div>

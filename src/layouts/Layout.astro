@@ -32,13 +32,13 @@ import Footer from "@/components/footer";
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>Dillon Walsh | Web Developer</title>
   </head>
   <body>
     <Nav client:load />
     <slot />
-    <Footer />
+    <Footer client:load />
   </body>
 </html>

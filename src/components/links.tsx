@@ -33,7 +33,11 @@ export default function Links() {
           animate="animate"
           variants={buttonVariants}
         >
-          <Button className="w-24 font-bold" variant="default" asChild>
+          <Button
+            className="w-24 text-sm font-semibold md:text-lg"
+            variant="default"
+            asChild
+          >
             <a href={link.href}>{link.label}</a>
           </Button>
         </motion.div>

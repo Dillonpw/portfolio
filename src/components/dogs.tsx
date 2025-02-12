@@ -10,7 +10,7 @@ const Dogs = () => {
     <TooltipProvider>
       <Tooltip>
         <TooltipTrigger asChild>
-          <h3 className="fade-in-3 cursor-pointer text-xl opacity-60">
+          <h3 className="fade-in-3 cursor-pointer text-sm md:text-lg opacity-60">
             I&apos;m probably walking my dogs
           </h3>
         </TooltipTrigger>
