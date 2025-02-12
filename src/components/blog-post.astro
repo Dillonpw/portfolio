@@ -1,4 +1,17 @@
 ---
-const { title, url } = Astro.props
+const { title, url, date } = Astro.props;
+
+const formattedDate = new Date(date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric'
+});
 ---
-<li><a href={url}>{title}</a></li>
+
+<li class="hover:bg-gray-100 rounded-lg transition-colors duration-200">
+  <a href={url} class="block p-6">
+    <h2 class="text-xl font-semibold text-gray-800 mb-2">{title}</h2>
+    <p class="text-sm text-gray-600">{formattedDate}</p>
+  </a>
+</li>
+
