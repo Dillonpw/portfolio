@@ -11,7 +11,7 @@ const Tech = () => {
       animate={{ y: 0 }}
       className="mt-16 cursor-pointer text-center md:mb-6"
     >
-      <h2 className="mb-4 text-2xl md:text-3xl">Working with</h2>
+      <h2 className="mb-4 text-xl md:text-2xl">Working with</h2>
       <div className="relative hidden md:block">
         <div className="relative flex overflow-hidden">
           {[0, 1].map((row) => (
@@ -23,7 +23,7 @@ const Tech = () => {
               {devTools.map((dt, index) => (
                 <motion.span
                   key={`${row}-${index}`}
-                  className="mx-4 opacity-60"
+                  className="mx-4 text-base opacity-60"
                   whileHover={{ scale: 1.4 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
