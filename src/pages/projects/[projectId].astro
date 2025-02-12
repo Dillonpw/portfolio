@@ -5,11 +5,16 @@ import { Image } from "astro:assets";
 import { Button } from "@/components/ui/button";
 import { Github, ExternalLink } from "lucide-astro";
 
+const { project } = Astro.props;
 const { projectId } = Astro.params;
 
-const project = descriptions.find(
-  (description) => description.id === projectId,
-);
+
+export async function getStaticPaths() {
+  return descriptions.map((project) => ({
+    params: { projectId: project.id },
+    props: { project },
+  }));
+}
 
 if (!project) {
   return new Response("Not Found", { status: 404, statusText: "Not Found" });
