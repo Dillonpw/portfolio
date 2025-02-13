@@ -3,10 +3,10 @@ import * as motion from "motion/react-client";
 
 export default function Links() {
   const buttonVariants = {
-    initial: { opacity: 0 },
+    initial: { opacity: 0, y: -90 },
     animate: (index: number) => ({
       opacity: 1,
-      y: [-30, 0],
+      y: 0,
       transition: {
         type: "spring",
         damping: 8,
@@ -34,7 +34,7 @@ export default function Links() {
           variants={buttonVariants}
         >
           <Button
-            className="w-24 text-sm font-semibold md:text-lg"
+            className="w-24 text-sm font-semibold md:text-lg bg-emerald-500"
             variant="default"
             asChild
           >
