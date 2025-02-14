@@ -34,7 +34,7 @@ export default function Links() {
           variants={buttonVariants}
         >
           <Button
-            className="w-24 text-sm font-semibold md:text-lg bg-emerald-500"
+            className="w-24 bg-emerald-500 text-sm font-semibold md:text-lg dark:bg-emerald-500/80 dark:hover:bg-emerald-500/40"
             variant="default"
             asChild
           >

@@ -8,8 +8,8 @@ const allPosts = await getCollection("blog");
 ---
 
 <Layout pageTitle={pageTitle}>
-  <div class="max-w-4xl mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold text-center text-gray-800 mb-12">Blog</h1>
+  <div class="max-w-4xl mx-auto px-4 py-12 dark:text-gray-200">
+    <h1 class="text-4xl font-bold text-center mb-12">Blog</h1>
     <ul class="space-y-6">
       {
         allPosts.map((post) => (

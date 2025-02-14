@@ -29,21 +29,21 @@ import Analytics from "@vercel/analytics/astro";
   }
 </script>
 
-<html lang="en">
+<html lang="en" class="dark:bg-gray-950">
   <head>
     <meta charset="UTF-8" />
     <Analytics />
     <meta name="viewport" content="width=device-width" />
-    <head>
-      <link rel="sitemap" href="/sitemap-0.xml" />
-    </head>
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Dillon Walsh | Web Developer</title>
-  </head>
-  <body>
-    <Nav client:load />
-    <slot />
-    <Footer client:load />
-  </body>
+
+    <link rel="sitemap" href="/sitemap-0.xml" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" /><meta
+      name="generator"
+      content={Astro.generator}
+    /><title>Dillon Walsh | Web Developer</title></head
+  >
 </html>
+<body class="dark:bg-gray-950 dark:text-gray-200">
+  <Nav client:load />
+  <slot />
+  <Footer client:load />
+</body>

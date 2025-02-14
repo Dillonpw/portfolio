@@ -27,7 +27,7 @@ const TextSwitcher = () => {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 1.5 }}
     >
-      <p className="fade-in-3 text-sm md:text-lg opacity-60">{text}</p>
+      <p className="fade-in-3 text-sm opacity-60 md:text-lg">{text}</p>
     </motion.span>
   );
 };

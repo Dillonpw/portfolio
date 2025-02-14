@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <div className="mt-10 grid grid-cols-1 items-center justify-center gap-8 md:mx-10 md:grid-cols-2">
+    <div className="mt-10 grid grid-cols-1 items-center justify-center gap-8 md:mx-10 md:grid-cols-2 dark:text-gray-200">
       <motion.div
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
@@ -53,7 +53,7 @@ const Header = () => {
         </motion.div>
         <motion.h2
           initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: .6, y: 0 }}
+          whileInView={{ opacity: 0.6, y: 0 }}
           viewport={{ once: true }}
           transition={{
             delay: 0.3,
@@ -61,7 +61,7 @@ const Header = () => {
             type: "spring",
             damping: 12,
           }}
-          className="text-sm opacity-60  md:text-lg"
+          className="text-sm opacity-60 md:text-lg"
         >
           If I'm not building{" "}
           <a

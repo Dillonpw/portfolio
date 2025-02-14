@@ -1,8 +1,13 @@
 import { useState, useEffect } from "react";
 import * as motion from "motion/react-client";
-import { ModeToggle } from "./mode-toggle"
+import { ModeToggle } from "./mode-toggle";
 import { Linkedin, Twitter, Github } from "lucide-react";
-import {Tooltip, TooltipContent, TooltipProvider, TooltipTrigger} from "@radix-ui/react-tooltip"
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@radix-ui/react-tooltip";
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,7 +38,7 @@ const Nav = () => {
         className={`mx-4 flex items-center justify-between px-6 backdrop-blur-xl transition-all ${
           isScrolled
             ? "mt-4 h-16 w-[90%] rounded-full bg-transparent text-black shadow-md dark:bg-neutral-900 dark:text-white"
-            : "h-16 w-full dark:text-white"
+            : "h-16 w-full"
         }`}
       >
         <a href="/" id="logo">

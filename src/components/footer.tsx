@@ -6,9 +6,9 @@ const Footer = () => {
     <>
       <motion.footer
         initial={{ opacity: 0 }}
-        transition={{ duration: 3, delay: 1 }}
+        transition={{ duration: 1 }}
         animate={{ opacity: 1 }}
-        className="mt-36 flex flex-col items-center justify-center pb-6 text-center text-sm xl:px-80"
+        className="mt-40 flex flex-col items-center justify-center pb-4 text-center text-sm xl:px-80 dark:text-gray-200"
       >
         <p className="mx-6">
           Built using <b className="text-emerald-500">React</b>,{" "}

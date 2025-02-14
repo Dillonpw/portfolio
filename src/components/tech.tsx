@@ -5,11 +5,12 @@ import { devTools } from "../../constants";
 const Tech = () => {
   return (
     <motion.section
-      initial={{ opacity: 0, y: 10 }}
-      transition={{ duration: 1, delay: 0.5 }}
+      initial={{ opacity: 0, y: 40 }}
+      transition={{ duration: .8, delay: 0.4 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: 0 }}
-      className="mt-16 cursor-pointer text-center md:mb-6"
+      viewport={{ once: true }}
+      className="mt-16 cursor-pointer text-center md:mb-6 dark:text-gray-200"
     >
       <h2 className="mb-4 text-xl md:text-2xl">Working with</h2>
       <div className="relative hidden md:block">
