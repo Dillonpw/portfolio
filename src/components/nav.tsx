@@ -1,31 +1,31 @@
-import { useState, useEffect } from "react";
-import * as motion from "motion/react-client";
-import { ModeToggle } from "./mode-toggle";
-import { Linkedin, Twitter, Github } from "lucide-react";
+import { useState, useEffect } from "react"
+import * as motion from "motion/react-client"
+import { ModeToggle } from "./mode-toggle"
+import { Twitter, Github } from "lucide-react"
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@radix-ui/react-tooltip";
+} from "@/components/ui/tooltip"
 
-const Nav = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+export default function Nav() {
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
-        setIsScrolled(true);
+        setIsScrolled(true)
       } else {
-        setIsScrolled(false);
+        setIsScrolled(false)
       }
-    };
+    }
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
     <motion.nav
@@ -52,7 +52,7 @@ const Nav = () => {
           />
         </a>
         <div className="flex space-x-4">
-          <TooltipProvider>
+          <TooltipProvider delayDuration={300}>
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
@@ -63,14 +63,16 @@ const Nav = () => {
                   aria-label="Twitter/X"
                   className="block p-2 transition-transform hover:scale-110"
                 >
-                  <Twitter />
+                  <Twitter className="h-5 w-5" />
                 </a>
               </TooltipTrigger>
-              <TooltipContent>Twitter/X</TooltipContent>
+              <TooltipContent side="bottom" className="select-none">
+                <p className="text-sm">Twitter/X</p>
+              </TooltipContent>
             </Tooltip>
           </TooltipProvider>
 
-          <TooltipProvider>
+          <TooltipProvider delayDuration={300}>
             <Tooltip>
               <TooltipTrigger asChild>
                 <a
@@ -81,35 +83,17 @@ const Nav = () => {
                   aria-label="GitHub"
                   className="block p-2 transition-transform hover:scale-110"
                 >
-                  <Github />
+                  <Github className="h-5 w-5" />
                 </a>
               </TooltipTrigger>
-              <TooltipContent>GitHub</TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
-
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger asChild>
-                <a
-                  id="linkedinLink"
-                  href="https://www.linkedin.com/in/dillon-walsh-50673b290/"
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="LinkedIn"
-                  className="block p-2 transition-transform hover:scale-110"
-                >
-                  <Linkedin />
-                </a>
-              </TooltipTrigger>
-              <TooltipContent>LinkedIn</TooltipContent>
+              <TooltipContent side="bottom" className="select-none">
+                <p className="text-sm">GitHub</p>
+              </TooltipContent>
             </Tooltip>
           </TooltipProvider>
         </div>
         <ModeToggle />
       </header>
     </motion.nav>
-  );
-};
-
-export default Nav;
+  )
+}

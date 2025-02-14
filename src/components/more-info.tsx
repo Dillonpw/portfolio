@@ -1,5 +1,6 @@
 import * as motion from "motion/react-client";
-const MoreInfo = () => {
+
+export default function MoreInfo() {
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -24,6 +25,4 @@ const MoreInfo = () => {
       </motion.p>
     </motion.section>
   );
-};
-
-export default MoreInfo;
+}

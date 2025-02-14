@@ -1,6 +1,6 @@
 import * as motion from "motion/react-client";
 
-const Footer = () => {
+export default function Footer() {
   const year = new Date().getFullYear();
   return (
     <>
@@ -21,6 +21,4 @@ const Footer = () => {
       </motion.footer>
     </>
   );
-};
-
-export default Footer;
+}

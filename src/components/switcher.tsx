@@ -1,7 +1,7 @@
 import { motion, useCycle } from "framer-motion";
 import { useEffect } from "react";
 
-const TextSwitcher = () => {
+export default function Switcher() {
   // Cycle between two states
   const [text, cycleText] = useCycle(
     "Web Developer",
@@ -30,6 +30,4 @@ const TextSwitcher = () => {
       <p className="fade-in-3 text-sm opacity-60 md:text-lg">{text}</p>
     </motion.span>
   );
-};
-
-export default TextSwitcher;
+}

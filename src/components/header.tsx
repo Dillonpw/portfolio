@@ -3,7 +3,7 @@ import Dogs from "./dogs";
 import Links from "./links";
 import { motion } from "framer-motion";
 
-const Header = () => {
+export default function Header() {
   return (
     <div className="mt-10 grid grid-cols-1 items-center justify-center gap-8 md:mx-10 md:grid-cols-2 dark:text-gray-200">
       <motion.div
@@ -77,6 +77,4 @@ const Header = () => {
       </div>
     </div>
   );
-};
-
-export default Header;
+}

@@ -2,7 +2,8 @@
 import { motion } from "framer-motion";
 import { devTools } from "../../constants";
 
-const Tech = () => {
+export default function Tech() {
+  
   return (
     <motion.section
       initial={{ opacity: 0, y: 40 }}
@@ -55,4 +56,3 @@ const Tech = () => {
   );
 };
 
-export default Tech;

@@ -5,7 +5,9 @@ import {
   TooltipTrigger,
 } from "./ui/tooltip";
 import * as motion from "motion/react-client";
-const Dogs = () => {
+
+export default function Dogs() {
+  
   return (
     <TooltipProvider>
       <Tooltip>
@@ -42,4 +44,3 @@ const Dogs = () => {
   );
 };
 
-export default Dogs;
