@@ -1,17 +1,15 @@
-"use client";
 import { motion } from "framer-motion";
 import { devTools } from "../../constants";
 
 export default function Tech() {
-  
   return (
     <motion.section
       initial={{ opacity: 0, y: 40 }}
-      transition={{ duration: .8, delay: 0.4 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
       whileInView={{ opacity: 1 }}
       animate={{ y: 0 }}
       viewport={{ once: true }}
-      className="mt-16 cursor-pointer text-center md:mb-6 dark:text-gray-200"
+      className="mt-16 cursor-pointer text-center md:mx-auto md:max-w-4xl lg:max-w-5xl dark:text-gray-200"
     >
       <h2 className="mb-4 text-xl md:text-2xl">Working with</h2>
       <div className="relative hidden md:block">
@@ -35,8 +33,8 @@ export default function Tech() {
             </div>
           ))}
         </div>
-        <div className="from-background absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r to-transparent"></div>
-        <div className="from-background absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l to-transparent"></div>
+        <div className="pointer-events-none absolute inset-y-0 left-0 w-1/6 bg-gradient-to-r from-white via-white to-transparent dark:from-neutral-950 dark:via-neutral-950"></div>
+        <div className="pointer-events-none absolute inset-y-0 right-0 w-1/6 bg-gradient-to-l from-white via-white to-transparent dark:from-neutral-950 dark:via-neutral-950"></div>
       </div>
       <div className="md:hidden">
         <ul className="flex flex-wrap items-center justify-center gap-3 px-4">
@@ -54,5 +52,4 @@ export default function Tech() {
       </div>
     </motion.section>
   );
-};
-
+}

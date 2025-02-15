@@ -15,6 +15,12 @@ export default function Links() {
     }),
   };
 
+  const links = [
+    { href: "/projects", label: "Projects", isExternal: false },
+    { href: "/blog", label: "Blog", isExternal: false },
+    { href: "https://work.dillonwalsh.com", label: "Work", isExternal: true },
+  ];
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -22,10 +28,7 @@ export default function Links() {
       transition={{ duration: 0.5 }}
       className="mt-2 flex items-center justify-center gap-4"
     >
-      {[
-        { href: "/projects", label: "Projects" },
-        { href: "/blog", label: "Blog" },
-      ].map((link, index) => (
+      {links.map((link, index) => (
         <motion.div
           key={link.href}
           custom={index}
@@ -34,11 +37,17 @@ export default function Links() {
           variants={buttonVariants}
         >
           <Button
-            className="w-24 bg-emerald-500 text-sm font-semibold md:text-lg dark:bg-emerald-500/80 dark:hover:bg-emerald-500/40"
+            className="w-22 bg-emerald-500 text-center text-sm font-semibold text-gray-950 hover:bg-emerald-400 md:text-base dark:bg-emerald-500/80 dark:hover:bg-emerald-400"
             variant="default"
-            asChild
+            size="default"
           >
-            <a href={link.href}>{link.label}</a>
+            {link.isExternal ? (
+              <a href={link.href} target="_blank" rel="noopener noreferrer">
+                {link.label}
+              </a>
+            ) : (
+              <a href={link.href}>{link.label}</a>
+            )}
           </Button>
         </motion.div>
       ))}

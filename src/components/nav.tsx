@@ -1,31 +1,31 @@
-import { useState, useEffect } from "react"
-import * as motion from "motion/react-client"
-import { ModeToggle } from "./mode-toggle"
-import { Twitter, Github } from "lucide-react"
+import { useState, useEffect } from "react";
+import * as motion from "motion/react-client";
+import { ModeToggle } from "./mode-toggle";
+import { Twitter, Github } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "@/components/ui/tooltip"
+} from "@/components/ui/tooltip";
 
 export default function Nav() {
-  const [isScrolled, setIsScrolled] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 20) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <motion.nav
@@ -35,10 +35,10 @@ export default function Nav() {
       className="sticky top-0 left-0 z-50 flex w-full justify-center transition-all"
     >
       <header
-        className={`mx-4 flex items-center justify-between px-6 backdrop-blur-xl transition-all ${
+        className={`mx-auto flex w-full max-w-4xl items-center justify-between px-6 backdrop-blur-xl transition-all ${
           isScrolled
-            ? "mt-4 h-16 w-[90%] rounded-full bg-transparent text-black shadow-md dark:bg-neutral-900 dark:text-white"
-            : "h-16 w-full"
+            ? "mt-4 h-16 rounded-full bg-transparent text-black shadow-md dark:bg-neutral-900 dark:text-white"
+            : "h-16"
         }`}
       >
         <a href="/" id="logo">
@@ -95,5 +95,5 @@ export default function Nav() {
         <ModeToggle />
       </header>
     </motion.nav>
-  )
+  );
 }
