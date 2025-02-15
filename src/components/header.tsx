@@ -74,10 +74,22 @@ export default function Header() {
             >
               Schedtrack.com <br />
             </a>
-            <span className="flex justify-center gap-1">
-            or <Redacted />
-            </span>
           </motion.h2>
+
+          <motion.span
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              delay: 0.2,
+              duration: 0.4,
+              type: "spring",
+              damping: 12,
+            }}
+            className="flex justify-center gap-1"
+          >
+            or <Redacted />
+          </motion.span>
           <Dogs />
           <Links />
         </div>
