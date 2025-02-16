@@ -6,14 +6,14 @@ export default function Redacted() {
       <motion.span
         initial={{ opacity: 1 }}
         whileHover={{ opacity: 0 }}
-        className="cursor-pointer bg-black p-1 text-xl text-white"
+        className="cursor-pointer bg-black rounded p-1 text-xl text-white"
       >
         REDACTED
       </motion.span>
       <motion.span
         initial={{ opacity: 0 }}
         whileHover={{ opacity: 1 }}
-        className="absolute inset-0 cursor-pointer bg-black text-xl text-white"
+        className="absolute inset-0 cursor-pointer bg-black rounded text-xl text-white"
       >
         Nice Try
       </motion.span>
