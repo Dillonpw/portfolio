@@ -92,7 +92,7 @@ export default function Nav() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <ModeToggle />
+        <ModeToggle client:load/>
       </header>
     </motion.nav>
   );
