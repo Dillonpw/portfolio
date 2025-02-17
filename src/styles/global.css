@@ -2,7 +2,7 @@
 
 @plugin "tailwindcss-animate";
 
-@custom-variant dark (&:where(.dark *));
+@custom-variant dark (&:where(.dark, .dark *));
 
 :root {
   --radius: 0.6rem;

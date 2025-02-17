@@ -6,7 +6,7 @@ import Redacted from "./redacted";
 
 export default function Header() {
   return (
-    <div className="mt-10 flex flex-col items-center justify-center md:mx-auto md:max-w-4xl lg:max-w-5xl">
+    <div className="flex flex-col items-center justify-center pt-10 md:mx-auto md:max-w-4xl lg:max-w-5xl ">
       <div className="grid grid-cols-1 items-center justify-center gap-8 md:grid-cols-2 dark:text-gray-200">
         <motion.div
           initial={{ opacity: 0, x: -100 }}

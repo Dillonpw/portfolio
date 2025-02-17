@@ -51,7 +51,7 @@ export default function Nav() {
             loading="eager"
           />
         </a>
-        <div className="flex space-x-4">
+        <div className="flex space-x-4 dark:text-gray-100">
           <TooltipProvider delayDuration={300}>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -92,7 +92,7 @@ export default function Nav() {
             </Tooltip>
           </TooltipProvider>
         </div>
-        <ModeToggle client:load />
+        <ModeToggle />
       </header>
     </motion.nav>
   );
