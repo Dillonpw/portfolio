@@ -1,52 +1,87 @@
-import * as React from "react"
-import { Moon, Sun } from "lucide-react"
-
-import { Button } from "@/components/ui/button"
+import * as React from "react";
+import { Moon, Sun } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu";
 
 export function ModeToggle() {
-  const [theme, setThemeState] = React.useState<
-    "theme-light" | "dark" | "system"
-  >("theme-light")
+  const [theme, setTheme] = React.useState("light");
+  const [open, setOpen] = React.useState(false);
 
   React.useEffect(() => {
-    const isDarkMode = document.documentElement.classList.contains("dark")
-    setThemeState(isDarkMode ? "dark" : "theme-light")
-  }, [])
+    const stored = localStorage.getItem("theme");
+    if (stored) {
+      setTheme(stored);
+      document.documentElement.classList.toggle("dark", stored === "dark");
+    } else {
+      const systemDark = window.matchMedia(
+        "(prefers-color-scheme: dark)",
+      ).matches;
+      setTheme(systemDark ? "dark" : "light");
+      document.documentElement.classList.toggle("dark", systemDark);
+    }
+  }, []);
 
-  React.useEffect(() => {
-    const isDark =
-      theme === "dark" ||
-      (theme === "system" &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    document.documentElement.classList[isDark ? "add" : "remove"]("dark")
-  }, [theme])
+  const updateTheme = (newTheme: string) => {
+    const resolvedTheme =
+      newTheme === "system"
+        ? window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light"
+        : newTheme;
+
+    setTheme(newTheme);
+    document.documentElement.classList.toggle("dark", resolvedTheme === "dark");
+    localStorage.setItem("theme", newTheme);
+    setOpen(false); // Close dropdown after selection
+  };
 
   return (
-    <DropdownMenu>
+    <DropdownMenu open={open} onOpenChange={setOpen}>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="icon">
-          <Sun className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-          <Moon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100 dark:text-gray-100" />
+        <Button
+          variant="outline"
+          size="icon"
+          className="relative h-10 w-10 cursor-pointer touch-none select-none"
+          style={{
+            WebkitTapHighlightColor: "transparent",
+            touchAction: "manipulation",
+          }}
+        >
+          <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0 dark:text-gray-100" />
           <span className="sr-only">Toggle theme</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuItem onClick={() => setThemeState("theme-light")}>
+      <DropdownMenuContent
+        align="end"
+        className="animate-in slide-in-from-top-2 z-50 min-w-[8rem] overflow-hidden rounded-md border bg-white p-1 shadow-md dark:bg-gray-950"
+      >
+        <DropdownMenuItem
+          className="cursor-pointer px-2 py-2 text-sm outline-none focus:bg-gray-100 dark:focus:bg-gray-700"
+          onClick={() => updateTheme("light")}
+        >
           Light
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setThemeState("dark")}>
+        <DropdownMenuItem
+          className="cursor-pointer px-2 py-2 text-sm outline-none focus:bg-gray-100"
+          onClick={() => updateTheme("dark")}
+        >
           Dark
         </DropdownMenuItem>
-        <DropdownMenuItem onClick={() => setThemeState("system")}>
+        <DropdownMenuItem
+          className="cursor-pointer px-2 py-2 text-sm outline-none focus:bg-gray-100"
+          onClick={() => updateTheme("system")}
+        >
           System
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }
+
+export default ModeToggle;
