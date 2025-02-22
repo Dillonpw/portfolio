@@ -36,19 +36,19 @@ export default function Links() {
           animate="animate"
           variants={buttonVariants}
         >
-          <Button
-            className="w-22 bg-emerald-500 text-center text-sm font-semibold text-gray-950 hover:bg-emerald-400 md:text-base dark:bg-emerald-500/80 dark:hover:bg-emerald-400"
-            variant="default"
-            size="lg"
+          <a
+            href={link.href}
+            target={link.isExternal ? "_blank" : "_self"}
+            rel={link.isExternal ? "noopener noreferrer" : undefined}
           >
-            {link.isExternal ? (
-              <a href={link.href} target="_blank" rel="noopener noreferrer">
-                {link.label}
-              </a>
-            ) : (
-              <a href={link.href}>{link.label}</a>
-            )}
-          </Button>
+            <Button
+              className="w-22 bg-emerald-500 text-center text-sm font-semibold text-gray-950 hover:bg-emerald-400 md:text-base dark:bg-emerald-500/80 dark:hover:bg-emerald-400"
+              variant="default"
+              size="lg"
+            >
+              {link.label}
+            </Button>
+          </a>
         </motion.div>
       ))}
     </motion.section>
