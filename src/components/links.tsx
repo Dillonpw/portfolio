@@ -39,7 +39,7 @@ export default function Links() {
           <Button
             className="w-22 bg-emerald-500 text-center text-sm font-semibold text-gray-950 hover:bg-emerald-400 md:text-base dark:bg-emerald-500/80 dark:hover:bg-emerald-400"
             variant="default"
-            size="default"
+            size="lg"
           >
             {link.isExternal ? (
               <a href={link.href} target="_blank" rel="noopener noreferrer">
