@@ -11,7 +11,7 @@ export const devTools = [
   "Playwright",
   "Vitest",
   "VS Code",
-  "PostgresSQL",
+  "PostgreSQL",
   "Git",
   "Astro",
   "Next",
