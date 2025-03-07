@@ -54,7 +54,7 @@ export default function ProjectList() {
                   </motion.span>
                 ))}
               </div>
-              <div className="p-2 text-sm opacity-60 md:p-4 md:text-lg">
+              <div className="p-2 text-sm opacity-60 md:p-4 md:text-lg dark:text-gray-200">
                 <p>{descriptions.about}</p>
               </div>
             </div>
