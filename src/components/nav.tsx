@@ -35,10 +35,10 @@ export default function Nav() {
       className="sticky top-0 left-0 z-50 flex w-full justify-center transition-all"
     >
       <header
-        className={`mx-auto flex w-full max-w-4xl items-center justify-between px-6 backdrop-blur-xl transition-all ${
+        className={`mx-auto flex w-full max-w-4xl items-center justify-between px-6 py-2 backdrop-blur-xl transition-all ${
           isScrolled
-            ? "mt-4 h-16 rounded-full bg-transparent text-black shadow-md dark:bg-neutral-900 dark:text-white"
-            : "h-16"
+            ? "h-16 rounded-b-md bg-transparent text-black shadow-md dark:bg-neutral-900 dark:text-white"
+            : ""
         }`}
       >
         <a href="/" id="logo">
