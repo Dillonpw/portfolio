@@ -2,57 +2,50 @@
 import "../styles/global.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
-import PostHogLayout from "./PostHogLayout.astro";
 ---
 
-<PostHogLayout>
-  <html lang="en" class="dark:bg-gray-950">
-    <head>
-      <meta charset="UTF-8" />
+<html lang="en" class="dark:bg-gray-950">
+  <head>
+    <meta charset="UTF-8" />
 
-      <script is:inline>
-        const getThemePreference = () => {
-          if (
-            typeof localStorage !== "undefined" &&
-            localStorage.getItem("theme")
-          ) {
-            return localStorage.getItem("theme");
-          }
-          return window.matchMedia("(prefers-color-scheme: dark)").matches
-            ? "dark"
-            : "light";
-        };
-        const isDark = getThemePreference() === "dark";
-        document.documentElement.classList[isDark ? "add" : "remove"]("dark");
-
-        if (typeof localStorage !== "undefined") {
-          const observer = new MutationObserver(() => {
-            const isDark = document.documentElement.classList.contains("dark");
-            localStorage.setItem("theme", isDark ? "dark" : "light");
-          });
-          observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ["class"],
-          });
+    <script is:inline>
+      const getThemePreference = () => {
+        if (
+          typeof localStorage !== "undefined" &&
+          localStorage.getItem("theme")
+        ) {
+          return localStorage.getItem("theme");
         }
-      </script>
+        return window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+      };
+      const isDark = getThemePreference() === "dark";
+      document.documentElement.classList[isDark ? "add" : "remove"]("dark");
 
-      <meta
-        name="viewport"
-        content="width=device-width initial-scale=1.0"
-      />
-      <link rel="sitemap" href="/sitemap-0.xml" />
-      <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-      <meta name="robots" content="index, follow" />
-      <meta name="generator" content={Astro.generator} />
-      <title>Dillon Walsh | Web Developer</title>
-      <meta name="description" content="Dillon Walsh Web Developer Portfolio" />
-      
-    </head>
-    <body class="dark:bg-gray-950">
-      <Nav client:load />
-      <slot />
-      <Footer client:load />
-    </body>
-  </html>
-</PostHogLayout>
+      if (typeof localStorage !== "undefined") {
+        const observer = new MutationObserver(() => {
+          const isDark = document.documentElement.classList.contains("dark");
+          localStorage.setItem("theme", isDark ? "dark" : "light");
+        });
+        observer.observe(document.documentElement, {
+          attributes: true,
+          attributeFilter: ["class"],
+        });
+      }
+    </script>
+
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <link rel="sitemap" href="/sitemap-0.xml" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="robots" content="index, follow" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Dillon Walsh | Web Developer</title>
+    <meta name="description" content="Dillon Walsh Web Developer Portfolio" />
+  </head>
+  <body class="dark:bg-gray-950">
+    <Nav client:load />
+    <slot />
+    <Footer client:load />
+  </body>
+</html>
