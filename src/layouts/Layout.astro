@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Nav from "@/components/nav";
 import Footer from "@/components/footer";
+import PostHog from "@/components/posthog.astro";
 ---
 
 <html lang="en" class="dark:bg-gray-950">
@@ -42,6 +43,7 @@ import Footer from "@/components/footer";
     <meta name="generator" content={Astro.generator} />
     <title>Dillon Walsh | Web Developer</title>
     <meta name="description" content="Dillon Walsh Web Developer Portfolio" />
+    <PostHog />
   </head>
   <body class="dark:bg-gray-950">
     <Nav client:load />

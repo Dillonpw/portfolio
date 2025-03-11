@@ -3,13 +3,10 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/header";
 import Tech from "@/components/tech";
 import MoreInfo from "@/components/more-info";
-import PostHogLayout from "../layouts/PostHogLayout.astro";
 ---
 
-<PostHogLayout>
   <Layout>
     <Header client:load />
     <Tech client:load />
     <MoreInfo client:load />
   </Layout>
-</PostHogLayout>
