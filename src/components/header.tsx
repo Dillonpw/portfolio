@@ -16,11 +16,11 @@ export default function Header() {
           className="flex justify-center"
         >
           <img
-            src="https://utfs.io/f/2x9MeROBnW8iOQeCQKVh4ogqGP9YIydZrTlvxQFDetMEbBfH"
+            src="./header-img.png"
             alt="cartoon"
             width={250}
             height={250}
-            className="rounded-full border-2 dark:border-gray-200"
+            className="rounded-b-xl"
           />
         </motion.div>
 
