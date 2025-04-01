@@ -4,7 +4,7 @@ import { Github, ExternalLink } from "lucide-react";
 export default function Schedtrack() {
   return (
     <motion.div
-      className="mx-10 mt-16 flex flex-col items-center justify-center"
+      className="mx-10 mt-16 flex flex-col items-center justify-center dark:text-gray-200"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.7, delay: 0.3 }}
