@@ -3,10 +3,12 @@ import Layout from "../layouts/Layout.astro";
 import Header from "../components/header";
 import Tech from "@/components/tech";
 import MoreInfo from "@/components/more-info";
+import Schedtrack from "@/components/Schedtrack";
 ---
 
-  <Layout>
-    <Header client:load />
-    <Tech client:load />
-    <MoreInfo client:load />
-  </Layout>
+<Layout>
+  <Header client:load />
+  <Tech client:load />
+  <Schedtrack client:load />
+  <MoreInfo client:load />
+</Layout>

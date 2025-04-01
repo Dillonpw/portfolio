@@ -29,31 +29,6 @@ export const devTools = [
 
 export const descriptions = [
   {
-    id: "rotating-schedule",
-    src: "/schedtrack-dt.jpeg",
-    src2: "/schedtrack-dt2.jpeg",
-    mobileImg: "/schedtrack-m.jpeg",
-    video: "https://utfs.io/f/2x9MeROBnW8izghZmAdbdqj6eSUgmlVLipk0w4HItRXDYyGJ",
-    livePreviewLink: "https://www.schedtrack.com/",
-    githubLink: "https://github.com/Dillonpw/schedule",
-    title: "Sched Track",
-    tags: [
-      "Next.js",
-      "Tailwind CSS",
-      "TypeScript",
-      "React",
-      "Shadcn/ui",
-      "Auth.js",
-      "Drizzle ORM",
-      "Neon Postgres",
-      "Playwright",
-    ],
-    challenge:
-      "This project was fun getting deeper into the server side, working with a new ORM and preparing to provide an actual utility tool. For now, the product remains free with Stripe donation options, but a paid version may come down the pipeline if it becomes too expensive to manage. I referenced several previous projects to make sure I was on the right track throughout development, as well as relevant documentation.",
-    about:
-      "A free schedule generator app for people who work rotating shifts based on a 24-hour basis instead of a Monday-Friday schedule. The app accepts input and returns a schedule based on the type of rotation the user needs to build around, with output displayed in the form of a simple, asthetic calendar. This project allows for either Google login, GitHub, or magic link login with an email address. The app has a built in light/dark/system toggle and intuitive navogation layout. There are plans to shift the user specific navigation into a sidebar, and to allow for more intricate schedule building and to update each individual day with adjustments such as vacation, appointments etc.",
-  },
-  {
     id: "ecommerce-site",
     src: "/ecommerce.png",
     src2: "/ecommerce-2.png",
