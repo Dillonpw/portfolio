@@ -16,7 +16,11 @@ export default function Links() {
   };
 
   const links = [
-    { href: "/projects", label: "Projects", isExternal: false },
+    {
+      href: "https://ui.dillonwalsh.com",
+      label: "UI",
+      isExternal: true,
+    },
     { href: "/blog", label: "Blog", isExternal: false },
     { href: "https://work.dillonwalsh.com", label: "Work", isExternal: true },
   ];
@@ -42,7 +46,7 @@ export default function Links() {
             rel={link.isExternal ? "noopener referrer" : undefined}
           >
             <Button
-              className="w-22 bg-emerald-500 text-center text-sm font-semibold text-gray-950 hover:bg-emerald-400 md:text-base cursor-pointer dark:bg-emerald-500/80 dark:hover:bg-emerald-400"
+              className="w-22 cursor-pointer bg-emerald-500 text-center text-sm font-semibold text-gray-950 hover:bg-emerald-400 md:text-base dark:bg-emerald-500/80 dark:hover:bg-emerald-400"
               variant="default"
               size="lg"
             >

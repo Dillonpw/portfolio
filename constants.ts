@@ -5,6 +5,7 @@ export const devTools = [
   "Motion",
   "React Native",
   "Tailwind CSS",
+  "Zustand",
   "Express",
   "Hono",
   "Alpine",

@@ -1,4 +1,5 @@
 import * as motion from "motion/react-client";
+import { Button } from "@/components/ui/button";
 
 export default function MoreInfo() {
   return (
@@ -23,6 +24,11 @@ export default function MoreInfo() {
       >
         Dillonpwalsh10@gmail.com
       </motion.p>
+      <div className="flex justify-center">
+        <Button className="w-32 cursor-pointer justify-center bg-emerald-500 text-center text-sm font-semibold text-gray-950 hover:bg-emerald-400 md:text-base dark:bg-emerald-500/80 dark:hover:bg-emerald-400">
+          <a href="/projects">Other Projects</a>
+        </Button>
+      </div>
     </motion.section>
   );
 }
