@@ -74,22 +74,16 @@ export default function Header() {
             >
               Schedtrack.com <br />
             </a>
+            or{" "}
+            <a
+              className="cursor-pointer hover:underline"
+              href="https://ui.dillonwalsh.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              ui.dillonwalsh.com
+            </a>
           </motion.h2>
-
-          <motion.span
-            initial={{ opacity: 0, y: -100 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{
-              delay: 0.2,
-              duration: 0.4,
-              type: "spring",
-              damping: 12,
-            }}
-            className="flex justify-center gap-1"
-          >
-            or <Redacted />
-          </motion.span>
           <Dogs />
           <Links />
         </div>
