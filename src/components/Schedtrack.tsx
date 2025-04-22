@@ -33,7 +33,7 @@ export default function Schedtrack() {
           />
         </div>
       </div>
-      <p className="mt-4 text-sm md:leading-8">
+      <p className="mt-4 text-sm opacity-60 md:text-base md:leading-8">
         This is Schedtrack, a free and open source scheduling software, fully
         designed and built by me. While the app allows for regular scheduling
         like everything does, what sets this apart is the ability to customize
